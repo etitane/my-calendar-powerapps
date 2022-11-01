@@ -1,0 +1,103 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "craad_lietotajses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "craad_lietotajs",
+    "MaxGetRowsCount": 500,
+    "Name": "Lietotajs",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "craad_e_mail": "e_mail",
+      "craad_Event_craad_Lietotajs_craad_Lietota": "Events",
+      "craad_firstname": "First name",
+      "craad_lietotajs_AsyncOperations": "System Jobs",
+      "craad_lietotajs_BulkDeleteFailures": "Bulk Delete Failures",
+      "craad_lietotajs_DuplicateBaseRecord": "Duplicate Records (craad_lietotajs_DuplicateBaseRecord)",
+      "craad_lietotajs_DuplicateMatchingRecord": "Duplicate Records (craad_lietotajs_DuplicateMatchingRecord)",
+      "craad_lietotajs_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "craad_lietotajs_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "craad_lietotajs_ProcessSession": "Process Sessions",
+      "craad_lietotajs_QueueItems": "Queue Items",
+      "craad_lietotajs_SyncErrors": "Sync Errors",
+      "craad_lietotajsid": "Lietotajs_lookup",
+      "craad_name": "Username",
+      "craad_password": "Password",
+      "craad_surname": "Surname",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Lietotajs",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Lietotajs (Views)",
+    "Name": "_craad_lietotajs_views",
+    "RelatedEntityName": "Lietotajs",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0f6065dc-b7ea-4097-8c72-18c33560593d": "Lietotajs Lookup View",
+      "1d82ff69-afb7-48c3-8516-b871a28da04c": "Active Lietotajs",
+      "9b72ccbb-dc24-4ce5-819b-c04bc70d6e67": "Lietotajs Associated View",
+      "c77b48d0-3fc2-4250-9a6c-10d56a287355": "Lietotajs Advanced Find View",
+      "c7991080-fa41-4d2a-8f91-704beef8da70": "Inactive Lietotajs"
+    }
+  },
+  {
+    "DisplayName": "Status (Lietotajs)",
+    "Name": "craad_lietotajs_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Lietotajs"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Lietotajs",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Lietotajs)",
+    "Name": "craad_lietotajs_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Lietotajs"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Lietotajs",
+    "Type": "OptionSetInfo"
+  }
+]

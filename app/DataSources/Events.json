@@ -1,0 +1,123 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "craad_events",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "craad_event",
+    "MaxGetRowsCount": 500,
+    "Name": "Events",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "craad_date": "Date",
+      "craad_details": "Details",
+      "craad_event_AsyncOperations": "System Jobs",
+      "craad_event_BulkDeleteFailures": "Bulk Delete Failures",
+      "craad_event_DuplicateBaseRecord": "Duplicate Records (craad_event_DuplicateBaseRecord)",
+      "craad_event_DuplicateMatchingRecord": "Duplicate Records (craad_event_DuplicateMatchingRecord)",
+      "craad_event_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "craad_event_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "craad_event_ProcessSession": "Process Sessions",
+      "craad_event_SyncErrors": "Sync Errors",
+      "craad_event_type": "event_type",
+      "craad_eventid": "Event",
+      "craad_Lietotajs": "Lietotajs_username",
+      "craad_name": "Name",
+      "craad_place": "Place",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Events",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Events (Views)",
+    "Name": "_craad_event_views",
+    "RelatedEntityName": "Events",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "aa435844-c603-4da6-bcdf-19eaabe987ba": "Inactive Events",
+      "c4630adc-61f5-4199-b137-6a13c4f76b34": "Event Associated View",
+      "d15531f9-d84e-4740-8a85-2836c86390d8": "Event Lookup View",
+      "dc97809e-a79f-48d9-9712-236e1b000b7b": "Active Events",
+      "ee4531ba-3fbc-4abd-aa35-2e29049d1e3e": "Event Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "event_type (Events)",
+    "Name": "craad_event_craad_event_type",
+    "OptionSetInfoNameMapping": {
+      "990730000": "Lekcijas",
+      "990730001": "Praktiskais darbs",
+      "990730002": "Uzdevums"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "craad_event_type",
+        "OptionSetReferenceEntityName": "Events"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "craad_event_type",
+    "RelatedEntityName": "Events",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Events)",
+    "Name": "craad_event_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Events"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Events",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Events)",
+    "Name": "craad_event_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Events"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Events",
+    "Type": "OptionSetInfo"
+  }
+]
