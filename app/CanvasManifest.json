@@ -109,8 +109,8 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Registration",
     "Login",
+    "Registration",
     "Calendar",
     "Create_new_event"
   ]

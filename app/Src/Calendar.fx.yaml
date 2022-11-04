@@ -61,7 +61,7 @@ Calendar As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =5
-            Text: =ThisItem.Lietotajs_username.Lietotajs_lookup
+            Text: =ThisItem.Lietotajs_username.LietotajsId
             Width: =100
             X: =0
             Y: =0

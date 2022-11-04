@@ -10,6 +10,8 @@
     "Name": "Events",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
+      "craad_Attachments_EventId_craad_Event": "Attachments",
+      "craad_craad_reminder_EventId_craad_event": "Reminders",
       "craad_date": "Date",
       "craad_details": "Details",
       "craad_event_AsyncOperations": "System Jobs",
@@ -21,10 +23,12 @@
       "craad_event_ProcessSession": "Process Sessions",
       "craad_event_SyncErrors": "Sync Errors",
       "craad_event_type": "event_type",
-      "craad_eventid": "Event",
+      "craad_eventid": "EventId",
       "craad_Lietotajs": "Lietotajs_username",
       "craad_name": "Name",
       "craad_place": "Place",
+      "craad_reminder": "Reminder",
+      "craad_time": "time",
       "createdby": "Created By",
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",
@@ -77,6 +81,28 @@
     },
     "OptionSetTypeKey": "PicklistType",
     "RelatedColumnInvariantName": "craad_event_type",
+    "RelatedEntityName": "Events",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Reminder (Events)",
+    "Name": "craad_event_craad_reminder",
+    "OptionSetInfoNameMapping": {
+      "990730000": "Atgādināt pirms 5 minūtēm",
+      "990730001": "Atgādināt pirms 10 minūtēm",
+      "990730002": "Atgādināt pirms 30 minūtēm",
+      "990730003": "Atgādināt pirms 1 stundas"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "craad_reminder",
+        "OptionSetReferenceEntityName": "Events"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "craad_reminder",
     "RelatedEntityName": "Events",
     "Type": "OptionSetInfo"
   },

@@ -36,6 +36,13 @@ Login As screen:
         Visible: =ShowWrongCredentials
         Width: =250
         X: =513
-        Y: =482
+        Y: =336
         ZIndex: =5
+
+    Button3 As button:
+        OnSelect: =Navigate(Registration)
+        Text: ="Reģistrēties"
+        X: =558
+        Y: =482
+        ZIndex: =6
 

@@ -13,6 +13,7 @@
       "craad_e_mail": "e_mail",
       "craad_Event_craad_Lietotajs_craad_Lietota": "Events",
       "craad_firstname": "First name",
+      "craad_is_admin": "is_admin",
       "craad_lietotajs_AsyncOperations": "System Jobs",
       "craad_lietotajs_BulkDeleteFailures": "Bulk Delete Failures",
       "craad_lietotajs_DuplicateBaseRecord": "Duplicate Records (craad_lietotajs_DuplicateBaseRecord)",
@@ -22,7 +23,7 @@
       "craad_lietotajs_ProcessSession": "Process Sessions",
       "craad_lietotajs_QueueItems": "Queue Items",
       "craad_lietotajs_SyncErrors": "Sync Errors",
-      "craad_lietotajsid": "Lietotajs_lookup",
+      "craad_lietotajsid": "LietotajsId",
       "craad_name": "Username",
       "craad_password": "Password",
       "craad_surname": "Surname",
@@ -59,6 +60,26 @@
       "c77b48d0-3fc2-4250-9a6c-10d56a287355": "Lietotajs Advanced Find View",
       "c7991080-fa41-4d2a-8f91-704beef8da70": "Inactive Lietotajs"
     }
+  },
+  {
+    "DisplayName": "is_admin (Lietotajs)",
+    "Name": "craad_lietotajs_craad_is_admin",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "craad_is_admin",
+        "OptionSetReferenceEntityName": "Lietotajs"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "craad_is_admin",
+    "RelatedEntityName": "Lietotajs",
+    "Type": "OptionSetInfo"
   },
   {
     "DisplayName": "Status (Lietotajs)",
