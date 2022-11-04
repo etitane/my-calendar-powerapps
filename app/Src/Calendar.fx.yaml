@@ -95,3 +95,10 @@ Calendar As screen:
             Y: =0
             ZIndex: =7
 
+    Button4 As button:
+        OnSelect: =Navigate(Login,ScreenTransition.Fade);Exit(true);
+        Text: ="Logout"
+        X: =1102
+        Y: =40
+        ZIndex: =2
+
