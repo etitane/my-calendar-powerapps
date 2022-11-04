@@ -6,8 +6,8 @@ Registration As screen:
         Height: =582
         NumberOfColumns: =1
         Width: =464
-        X: =390
-        Y: =117
+        X: =418
+        Y: =91
         ZIndex: =1
 
         e_mail_DataCard1 As typedDataCard.textualEditCard:
@@ -246,6 +246,7 @@ Registration As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
+                Mode: =TextMode.Password
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -351,10 +352,10 @@ Registration As screen:
                 ZIndex: =4
 
     Button1 As button:
-        OnSelect: =SubmitForm(Form1)
+        OnSelect: =SubmitForm(Form1) && Navigate(Login)
         Text: ="Reģistrēties"
         X: =570
-        Y: =659
+        Y: =673
         ZIndex: =2
 
     Label1 As label:
