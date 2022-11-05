@@ -47,7 +47,7 @@ LeftNavigation As CanvasComponent:
             Height: =50
             Icon: =ThisItem.Icon
             OnSelect: =Navigate(ThisItem.Screen, Fade)
-            Y: =15
+            Y: =7
             ZIndex: =2
 
     Icon3 As icon.Hamburger:
