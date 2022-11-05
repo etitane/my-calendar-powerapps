@@ -21,7 +21,7 @@ LeftNavigation As CanvasComponent:
     ZIndex: =1
 
     "Gallery2 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver4.0'":
-        Height: =696
+        Height: =400
         Items: =LeftNavigation.NavItem
         Layout: =Layout.Vertical
         OnSelect: =Navigate(ThisItem.Screen, Fade)
