@@ -24,15 +24,22 @@ LeftNavigation As CanvasComponent:
         Items: =CustomGallerySample
         Layout: =Layout.Vertical
         TemplatePadding: =0
-        TemplateSize: |
-            =80
+        TemplateSize: =70
         Width: =70
         Y: =IconHamburger.Y+IconHamburger.Height
         ZIndex: =2
 
     Rectangle1 As rectangle:
-        Height: =80
-        Width: =11
+        Height: =60
+        Width: =10
         Y: =70
         ZIndex: =3
+
+    Icon2 As icon.Person:
+        Height: =60
+        Icon: =Icon.Person
+        Width: =52
+        X: =6
+        Y: =70
+        ZIndex: =4
 
