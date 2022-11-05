@@ -1,4 +1,5 @@
 Screen2 As screen:
+    Height: =Max(App.Height, App.DesignHeight)
     OnVisible: |-
         =/*resets calendar view and date selection to today*/
         Set(_dateSelected, Today());
@@ -6,6 +7,7 @@ Screen2 As screen:
         Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), Days));
         Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, Months), -1, Days));
         Set(_calendarVisible, true);
+    Width: =Max(App.Width, App.DesignWidth)
 
     LblMonthSelected1_1 As label:
         Align: =Align.Center
