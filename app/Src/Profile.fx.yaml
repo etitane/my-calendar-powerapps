@@ -415,3 +415,7 @@ Profile As screen:
         Y: =34
         ZIndex: =10
 
+    LeftNavigation_4 As LeftNavigation_3:
+        Width: =LeftNavigation_4.MenuWidth
+        ZIndex: =11
+
