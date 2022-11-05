@@ -158,3 +158,6 @@ Screen2 As screen:
             Wrap: =false
             ZIndex: =3
 
+    LeftNavigation_1 As LeftNavigation:
+        ZIndex: =6
+

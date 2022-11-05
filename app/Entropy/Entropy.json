@@ -1,6 +1,7 @@
 {
   "ComponentIndexes": {
-    "LeftNavigation": 5
+    "LeftNavigation": 5,
+    "LeftNavigation_1": 5
   },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
@@ -69,6 +70,7 @@
     "Label3": 48,
     "LblMonthSelected1_1": 33,
     "LeftNavigation": 98,
+    "LeftNavigation_1": 100,
     "Lietotajs_Column1": 57,
     "Lietotajs_DataCard1": 92,
     "Login": 44,
@@ -104,7 +106,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/05/2022 06:42:41",
+  "HeaderLastSavedDateTimeUTC": "11/05/2022 06:43:25",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "a9b6b21f-9d5b-4c79-9bac-ce83e4895a1a": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/68587bd828474d07884216523403799d\""
@@ -216,6 +218,7 @@
     "Label3": 3,
     "LblMonthSelected1_1": 79,
     "LeftNavigation": 0,
+    "LeftNavigation_1": 0,
     "Lietotajs_Column1": 38,
     "Lietotajs_DataCard1": 73,
     "Login": 0,
@@ -264,6 +267,7 @@
       "dataTableColumn": 6,
       "datepicker": 1,
       "dropdown": 2,
+      "f7c2e4baec1d40e0ba77a8fc625c59b1": 1,
       "form": 2,
       "gallery": 2,
       "galleryTemplate": 2,
