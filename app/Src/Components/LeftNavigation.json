@@ -416,7 +416,7 @@
           },
           {
             "Category": "Data",
-            "InvariantScript": "ThisItem.",
+            "InvariantScript": "\"Profile\"",
             "Property": "Text",
             "RuleProviderType": "Unknown"
           },
@@ -1421,7 +1421,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638032299281968567",
+    "LastModifiedTimestamp": "638032301159094180",
     "Name": "LeftNavigation",
     "Rules": [
       {
@@ -1511,7 +1511,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638032299281968567",
+  "LastModifiedTimestamp": "638032301159094180",
   "Name": "f7c2e4baec1d40e0ba77a8fc625c59b1",
   "OverridableProperties": {},
   "Version": "638032271152912589"

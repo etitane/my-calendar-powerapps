@@ -63,7 +63,7 @@ LeftNavigation As CanvasComponent:
         PaddingRight: =0
         PaddingTop: =0
         Size: =16
-        Text: =ThisItem.
+        Text: ="Profile"
         Width: =Parent.Width
         Y: =65
         ZIndex: =5
