@@ -708,14 +708,7 @@
           "HoverFill",
           "X",
           "Y",
-          {
-            "AFDDataSourceName": "",
-            "AutoRuleBindingEnabled": false,
-            "AutoRuleBindingString": "153.83333333333331",
-            "InvariantPropertyName": "Width",
-            "IsLockable": false,
-            "NameMapSourceSchema": "?"
-          },
+          "Width",
           {
             "AFDDataSourceName": "",
             "AutoRuleBindingEnabled": false,
@@ -869,13 +862,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "153",
+            "InvariantScript": "150",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "Parent.Height",
+            "InvariantScript": "696",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -958,7 +951,7 @@
         "Name": "Icon5",
         "Parent": "LeftNavigation",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 96,
+        "PublishOrderIndex": 95,
         "Rules": [
           {
             "Category": "Design",
@@ -1022,25 +1015,25 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "0",
+            "InvariantScript": "8",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "89",
+            "InvariantScript": "100",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "64",
+            "InvariantScript": "53",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "64",
+            "InvariantScript": "56",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -1162,7 +1155,7 @@
         "Name": "Icon6",
         "Parent": "LeftNavigation",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 97,
+        "PublishOrderIndex": 96,
         "Rules": [
           {
             "Category": "Design",
@@ -1226,25 +1219,25 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "0",
+            "InvariantScript": "8",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "186",
+            "InvariantScript": "202",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "64",
+            "InvariantScript": "57",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "64",
+            "InvariantScript": "46",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -1365,7 +1358,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638032330206496305",
+    "LastModifiedTimestamp": "638032331042040684",
     "Name": "LeftNavigation",
     "Rules": [
       {
@@ -1455,7 +1448,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638032330206496305",
+  "LastModifiedTimestamp": "638032331042040684",
   "Name": "f7c2e4baec1d40e0ba77a8fc625c59b1",
   "OverridableProperties": {},
   "Version": "638032271152912589"

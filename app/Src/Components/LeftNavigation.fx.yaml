@@ -21,13 +21,13 @@ LeftNavigation As CanvasComponent:
     ZIndex: =1
 
     "Gallery2 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver4.0'":
-        Height: =Parent.Height
+        Height: =696
         Items: =LeftNavigation.NavItem
         Layout: =Layout.Vertical
         OnSelect: =Navigate(ThisItem.Screen, Fade)
         TemplatePadding: =0
         TemplateSize: =98
-        Width: =153
+        Width: =150
         Y: =70
         ZIndex: =1
 
@@ -55,13 +55,19 @@ LeftNavigation As CanvasComponent:
         ZIndex: =2
 
     Icon5 As icon.Add:
+        Height: =56
         Icon: =Icon.Person
         OnSelect: =true
-        Y: =89
+        Width: =53
+        X: =8
+        Y: =100
         ZIndex: =3
 
     Icon6 As icon.Cancel:
+        Height: =46
         Icon: =Icon.Cancel
-        Y: =186
+        Width: =57
+        X: =8
+        Y: =202
         ZIndex: =4
 
