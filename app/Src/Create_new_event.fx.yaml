@@ -5,6 +5,7 @@ Create_new_event As screen:
         DefaultMode: =FormMode.New
         Height: =582
         NumberOfColumns: =1
+        OnSuccess: =Navigate(Screen2)
         Width: =464
         X: =462
         Y: =100
@@ -143,17 +144,44 @@ Create_new_event As screen:
                 Y: =DataCardKey9.Y
                 ZIndex: =7
 
-        time_DataCard1 As typedDataCard.blankCard:
+        time_DataCard1 As typedDataCard.numberEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="craad_time"
+            Default: =ThisItem.time
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Events],DataSourceInfo.DisplayName,"craad_time")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =99
+            Required: =true
+            Update: =0
             Width: =164
             X: =0
             Y: =2
             ZIndex: =1
+
+            DataCardKey14 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: ="Time"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                Y: =10
+                ZIndex: =1
+
+            ErrorMessage12 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =HourValue1.Y + HourValue1.Height
+                ZIndex: =3
 
             HourValue1 As dropdown:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
@@ -169,8 +197,8 @@ Create_new_event As screen:
                 Width: |+
                     =Parent.Width / 2 - 5
                     
-                Y: =DateValue1.Y
-                ZIndex: =1
+                Y: =49
+                ZIndex: =5
 
             Separator1 As label:
                 Align: =Align.Center
@@ -186,7 +214,7 @@ Create_new_event As screen:
                 Wrap: =false
                 X: =HourValue1.X + HourValue1.Width
                 Y: =HourValue1.Y
-                ZIndex: =2
+                ZIndex: =6
 
             MinuteValue1 As dropdown:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
@@ -202,7 +230,7 @@ Create_new_event As screen:
                 Width: =HourValue1.Width
                 X: =HourValue1.X + HourValue1.Width + Separator1.Width
                 Y: =HourValue1.Y
-                ZIndex: =3
+                ZIndex: =7
 
         event_type_DataCard1 As typedDataCard.comboBoxOptionSetSingleEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -348,7 +376,7 @@ Create_new_event As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue11.Selected
+            Update: =ThisItem.Lietotajs_username
             Visible: =false
             Width: =464
             X: =0

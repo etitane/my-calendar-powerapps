@@ -9,6 +9,11 @@ LeftNavigation As CanvasComponent:
                 Screen: Profile,
                 Icon: Icon.Person
             },
+            {
+                Title: "Calendar",
+                Screen: Screen2,
+                Icon: Icon.CalendarBlank
+            },
              {
                 Title: "Logout",
                 Screen: Login,
@@ -27,7 +32,7 @@ LeftNavigation As CanvasComponent:
         OnSelect: =Navigate(ThisItem.Screen, Fade)
         TemplatePadding: =0
         TemplateSize: =71
-        Width: =153.83333333333331
+        Width: =153.8333333333
         Y: =67
         ZIndex: =1
 
