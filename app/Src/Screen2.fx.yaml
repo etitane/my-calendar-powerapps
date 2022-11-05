@@ -2,11 +2,12 @@ Screen2 As screen:
     Height: =Max(App.Height, App.DesignHeight)
     OnVisible: |-
         =/*resets calendar view and date selection to today*/
+        Set(_calendarVisible, true);
         Set(_dateSelected, Today());
         Set(_firstDayOfMonth, DateAdd(Today(), 1 - Day(Today()), Days));
         Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), Days));
         Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, Months), -1, Days));
-        Set(_calendarVisible, true);
+        ClearCollect(colData, Filter('Events', 'Created On' >= _firstDayOfMonth && 'Created On' <= _lastDayOfMonth));
     Width: =Max(App.Width, App.DesignWidth)
 
     LblMonthSelected1_1 As label:
@@ -17,7 +18,7 @@ Screen2 As screen:
         Visible: =_calendarVisible
         Width: =419
         Wrap: =false
-        X: =467
+        X: =517
         Y: =104
         ZIndex: =1
 
@@ -39,8 +40,8 @@ Screen2 As screen:
         Tooltip: ="View previous month"
         Visible: =_calendarVisible
         Width: =59
-        X: =467
-        Y: =114
+        X: =517
+        Y: =104
         ZIndex: =2
 
     iconNextMonth1_1 As icon.ChevronRight:
@@ -61,21 +62,21 @@ Screen2 As screen:
         Tooltip: ="View next month"
         Visible: =_calendarVisible
         Width: =59
-        X: =827
-        Y: =114
+        X: =877
+        Y: =104
         ZIndex: =3
 
     WeekdayGallery1_1 As gallery.WeekdayGallery:
         AccessibleLabel: ="Days of the week"
-        Height: =50
+        Height: =46
         Items: =Calendar.WeekdaysShort()
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =178
         Visible: =_calendarVisible
-        Width: =1242
-        X: =59
-        Y: =168
+        Width: =1255
+        X: =91
+        Y: =163
         ZIndex: =4
 
         Title1_1 As label:
@@ -103,9 +104,9 @@ Screen2 As screen:
         ShowScrollbar: =false
         TemplateSize: =90
         Visible: =_calendarVisible
-        Width: =1242
+        Width: =1255
         WrapCount: =7
-        X: =59
+        X: =91
         Y: =222
         ZIndex: =5
 
