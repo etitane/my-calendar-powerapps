@@ -26,8 +26,8 @@ LeftNavigation As CanvasComponent:
         Layout: =Layout.Vertical
         OnSelect: =Navigate(ThisItem.Screen, Fade)
         TemplatePadding: =0
-        TemplateSize: =Min(128, Self.Height - 60)
-        Width: =Parent.Width
+        TemplateSize: =98
+        Width: =153
         Y: =70
         ZIndex: =1
 
@@ -42,13 +42,6 @@ LeftNavigation As CanvasComponent:
             X: =70
             Y: =47
             ZIndex: =2
-
-        Separator5 As rectangle:
-            Height: =1
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =126
-            ZIndex: =4
 
     Icon3 As icon.Hamburger:
         Height: =70
@@ -69,6 +62,6 @@ LeftNavigation As CanvasComponent:
 
     Icon6 As icon.Cancel:
         Icon: =Icon.Cancel
-        Y: =226
+        Y: =180
         ZIndex: =4
 
