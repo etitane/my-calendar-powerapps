@@ -1,6 +1,6 @@
 LeftNavigation As CanvasComponent:
     Fill: =RGBA(244, 244, 244, 1)
-    Height: =Max(App.Height, App.DesignHeight)
+    Height: =300
     MenuWidth: =If(varOpenMenu, Max(App.Width, App.DesignWidth)/12+40, 70)
     NavItem: |-
         =Table(
