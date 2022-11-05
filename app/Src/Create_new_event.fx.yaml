@@ -5,7 +5,7 @@ Create_new_event As screen:
         DefaultMode: =FormMode.New
         Height: =582
         NumberOfColumns: =1
-        OnSuccess: =Navigate(Screen2); FormMode.New
+        OnSuccess: =Navigate(Screen2); ResetForm( Form1_1 )
         Width: =464
         X: =462
         Y: =100
