@@ -2,6 +2,19 @@ LeftNavigation As CanvasComponent:
     Fill: =RGBA(244, 244, 244, 1)
     Height: =Max(App.Height, App.DesignHeight)
     MenuWidth: =If(varOpenMenu, Max(App.Width, App.DesignWidth)/12+40, 70)
+    NavItem: |-
+        =Table(
+            {
+                Title: "Profile",
+                Screen: App.ActiveScreen,
+                Icon: Person
+            },
+             {
+                Title: "Logout",
+                Screen: App.ActiveScreen,
+                Icon: Cancel
+            }
+        )
     Width: =LeftNavigation.MenuWidth
     X: =0
     Y: =0
