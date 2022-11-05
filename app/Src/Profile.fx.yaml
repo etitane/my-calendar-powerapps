@@ -33,73 +33,42 @@ Profile As screen:
         Y: =158
         ZIndex: =9
 
-        "'First name_DataCard2' As typedDataCard.textualEditCard":
+        "'First name_DataCard6' As typedDataCard.textualViewCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="craad_firstname"
             Default: =ThisItem.'First name'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@Lietotajs],DataSourceInfo.DisplayName,"craad_firstname")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =140
-            MaxLength: =DataSourceInfo([@Lietotajs], DataSourceInfo.MaxLength, "craad_firstname")
+            Height: =40
             Required: =true
-            Update: =DataCardValue13.Text
             Width: =581
             X: =0
             Y: =0
             ZIndex: =1
 
-            DataCardKey14 As label:
+            DataCardKey23 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10 + (DataCardValue13.Height / 2) - (Self.Height / 2)
+                Y: =10 + (DataCardValue22.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
-            DataCardValue13 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =(Parent.Width - 60) * 0.6
-                X: =DataCardKey14.X + DataCardKey14.Width
-                Y: =10
-                ZIndex: =2
-
-            ErrorMessage13 As label:
+            DataCardValue22 As label:
                 AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue13.Y + DataCardValue13.Height
-                ZIndex: =3
-
-            StarVisible13 As label:
-                Align: =Align.Center
-                Height: =DataCardKey14.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey14.Y
-                ZIndex: =4
+                Text: =Parent.Default
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey23.X + DataCardKey23.Width
+                Y: =10
+                ZIndex: =2
 
         Surname_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -399,7 +368,7 @@ Profile As screen:
 
             DataCardValue12 As label:
                 DisplayMode: =Parent.DisplayMode
-                Height: =10
+                Height: =48
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
