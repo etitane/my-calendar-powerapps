@@ -38,6 +38,9 @@ LeftNavigation As CanvasComponent:
     Icon2 As icon.Person:
         Height: =50
         Icon: =Icon.Person
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingTop: =10
         Width: =60
         X: =10
         Y: =70
