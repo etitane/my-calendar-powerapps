@@ -162,7 +162,8 @@ Screen2 As screen:
         Gallery4 As gallery.galleryVertical:
             Height: =54
             Items: |
-                =Filter('Events', 'Created On' = DateAdd(_firstDayInView,ThisItem.Value,Days))
+                =//Filter('Events', 'Created On' = DateAdd(_firstDayInView,ThisItem.Value,Days))
+                Filter(Events, Text('Created On', ShortDate) = Text(DateAdd(_firstDayInView, ThisItem.Value), ShortDate))
             Layout: =Layout.Vertical
             TemplateSize: =19
             Width: =173
@@ -172,6 +173,7 @@ Screen2 As screen:
             Button7 As button:
                 Height: =17
                 OnSelect: =Select(Parent)
+                Size: =10
                 Text: =ThisItem.Name
                 Width: =163
                 ZIndex: =1
