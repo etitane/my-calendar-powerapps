@@ -12,6 +12,7 @@ Calendar As screen:
         ZIndex: =1
 
         Name_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Name"
             FieldName: ="craad_name"
@@ -20,8 +21,8 @@ Calendar As screen:
             LayoutHeight: =Parent.Height
             Order: =1
             Text: =ThisItem.Name
-            Width: =100
-            X: =0
+            Width: =141
+            X: =28
             Y: =0
             ZIndex: =1
 
@@ -107,4 +108,8 @@ Calendar As screen:
         X: =768
         Y: =232
         ZIndex: =3
+
+    LeftNavigation_5 As LeftNavigation:
+        Width: =LeftNavigation_5.MenuWidth
+        ZIndex: =4
 

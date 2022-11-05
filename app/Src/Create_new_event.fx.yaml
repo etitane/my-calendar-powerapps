@@ -474,3 +474,7 @@ Create_new_event As screen:
         Y: =38
         ZIndex: =3
 
+    LeftNavigation_2 As LeftNavigation:
+        Width: =LeftNavigation_2.MenuWidth
+        ZIndex: =4
+

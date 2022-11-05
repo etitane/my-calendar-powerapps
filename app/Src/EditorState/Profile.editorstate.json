@@ -5664,7 +5664,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "BorderStyle",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "BorderStyle",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "FocusedBorderColor",
         {
           "AFDDataSourceName": "",
@@ -5707,6 +5714,14 @@
           "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
           "InvariantPropertyName": "AcceptsFocus",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Visible",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         }
@@ -5793,6 +5808,11 @@
           "Category": "Design",
           "PropertyName": "AcceptsFocus",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Visible",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultFormStyle",
@@ -5812,7 +5832,14 @@
           "NameMapSourceSchema": "?"
         },
         "Role",
-        "Color",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Color",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledColor",
         "PressedColor",
         "HoverColor",
@@ -6088,12 +6115,26 @@
           "NameMapSourceSchema": "?"
         },
         "Role",
-        "Color",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Color",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledColor",
         "PressedColor",
         "HoverColor",
         "BorderColor",
-        "DisabledBorderColor",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisabledBorderColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "PressedBorderColor",
         "HoverBorderColor",
         "BorderStyle",

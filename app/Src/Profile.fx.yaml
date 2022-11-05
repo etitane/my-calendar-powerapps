@@ -1,6 +1,7 @@
 Profile As screen:
 
     Label2_1 As label:
+        Color: =RGBA(39, 67, 125, 1)
         Size: =17
         Text: ="MyCalendar"
         X: =88
@@ -21,6 +22,7 @@ Profile As screen:
     Form3 As form:
         AcceptsFocus: =false
         BorderColor: =RGBA(50, 86, 160, 1)
+        BorderStyle: =BorderStyle.None
         BorderThickness: =2
         DataSource: =Lietotajs
         Fill: =RGBA(241, 244, 249, 1)
@@ -408,10 +410,12 @@ Profile As screen:
                 ZIndex: =2
 
     Label2_2 As label:
+        Color: =RGBA(39, 67, 125, 1)
+        DisabledBorderColor: =RGBA(0, 13, 75, 1)
         FontWeight: =FontWeight.Semibold
         Size: =30
         Text: ="Profils"
-        X: =570
+        X: =618
         Y: =34
         ZIndex: =10
 
