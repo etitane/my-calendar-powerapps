@@ -159,5 +159,6 @@ Screen2 As screen:
             ZIndex: =3
 
     LeftNavigation_1 As LeftNavigation:
+        Width: =LeftNavigation_1.MenuWidth
         ZIndex: =6
 
