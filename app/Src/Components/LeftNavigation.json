@@ -1056,7 +1056,14 @@
             "IsLockable": false,
             "NameMapSourceSchema": "?"
           },
-          "Height",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "575",
+            "InvariantPropertyName": "Height",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "ZIndex"
         ],
         "ControlUniqueId": "115",
@@ -1208,7 +1215,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "575",
+            "InvariantScript": "Parent.Height",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -1500,7 +1507,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638032320574717231",
+    "LastModifiedTimestamp": "638032329368780225",
     "Name": "LeftNavigation",
     "Rules": [
       {
@@ -1590,7 +1597,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638032320574717231",
+  "LastModifiedTimestamp": "638032329368780225",
   "Name": "f7c2e4baec1d40e0ba77a8fc625c59b1",
   "OverridableProperties": {},
   "Version": "638032271152912589"
