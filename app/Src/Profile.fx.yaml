@@ -2,35 +2,73 @@ Profile As screen:
 
     Label2_1 As label:
         Text: ="MyCalendar"
-        X: =543
-        Y: =102
+        X: =601
+        Y: =106
         ZIndex: =1
 
     TextInput3 As text:
         Default: =""
-        Height: =44
+        Height: =74
         HintText: ="Ievadt jaunu lietotājvārdu"
-        Width: =302
-        X: =681
-        Y: =198
+        Width: =336
+        X: =508
+        Y: =208
         ZIndex: =2
 
     TextInput4 As text:
         Default: =""
+        Height: =69
         HintText: ="Ievadīt jaunu e-pastu"
-        X: =681
-        Y: =278
+        Width: =336
+        X: =508
+        Y: =304
         ZIndex: =3
 
     TextInput5 As text:
+        BorderColor: =RGBA(21, 130, 108, 1)
         Default: =""
-        X: =681
-        Y: =358
+        Height: =69
+        HintText: ="ievadīt jaunu paroli"
+        Width: =336
+        X: =508
+        Y: =394
         ZIndex: =4
 
     Label4 As label:
-        Text: ="Text"
-        X: =236
-        Y: =230
+        Align: =Align.Center
+        Height: =74
+        Text: ="Lietotājvārds"
+        Width: =130
+        X: =349
+        Y: =208
         ZIndex: =5
+
+    Label4_1 As label:
+        Align: =Align.Center
+        Height: =74
+        Text: ="E-pasts"
+        Width: =130
+        X: =349
+        Y: =304
+        ZIndex: =6
+
+    Label4_2 As label:
+        Align: =Align.Center
+        Height: =74
+        Text: ="Parole"
+        Width: =130
+        X: =349
+        Y: =394
+        ZIndex: =7
+
+    Button6 As button:
+        Color: =White
+        Fill: =RGBA(48, 186, 159, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =94
+        Text: ="Saglabāt un atgriezties"
+        Width: =296
+        X: =528
+        Y: =590
+        ZIndex: =8
 
