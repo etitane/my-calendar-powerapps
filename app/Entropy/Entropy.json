@@ -65,6 +65,7 @@
     "galleryTemplate2_1": 40,
     "HourValue1": 78,
     "Icon3": 122,
+    "Icon5": 136,
     "iconNextMonth1_1": 35,
     "iconPrevMonth1_1": 34,
     "Image4": 128,
@@ -113,7 +114,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/05/2022 07:51:01",
+  "HeaderLastSavedDateTimeUTC": "11/05/2022 07:59:21",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "a9b6b21f-9d5b-4c79-9bac-ce83e4895a1a": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/68587bd828474d07884216523403799d\""
@@ -222,6 +223,7 @@
     "galleryTemplate2_1": 87,
     "HourValue1": 59,
     "Icon3": 91,
+    "Icon5": 0,
     "iconNextMonth1_1": 82,
     "iconPrevMonth1_1": 81,
     "Image4": 94,
@@ -246,7 +248,7 @@
     "Registration": 0,
     "Screen2": 0,
     "Separator1": 60,
-    "Separator5": 97,
+    "Separator5": 96,
     "StarVisible1": 9,
     "StarVisible10": 69,
     "StarVisible11": 74,
@@ -264,7 +266,7 @@
     "TextInput2": 2,
     "Title1_1": 85,
     "Title2_1": 88,
-    "Title4": 96,
+    "Title4": 95,
     "Username_DataCard1": 8,
     "WeekdayGallery1_1": 83
   },

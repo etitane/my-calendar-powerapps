@@ -23,6 +23,7 @@ LeftNavigation As CanvasComponent:
     "Gallery2 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver4.0'":
         Items: =LeftNavigation.NavItem
         Layout: =Layout.Vertical
+        OnSelect: =Navigate(ThisItem.Screen, Fade)
         TemplatePadding: =0
         TemplateSize: =Min(128, Self.Height - 60)
         Width: =Parent.Width
@@ -31,7 +32,7 @@ LeftNavigation As CanvasComponent:
 
         Image4 As image:
             Height: =96
-            OnSelect: =Select(Parent)
+            OnSelect: =Navigate(ThisItem.Screen, Fade)
             Width: =70
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =1
@@ -40,10 +41,6 @@ LeftNavigation As CanvasComponent:
             Align: =Align.Center
             Height: =33
             OnSelect: =Navigate(ThisItem.Screen, Fade)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
             Size: =16
             Text: =ThisItem.Title
             VerticalAlign: =VerticalAlign.Top
@@ -69,4 +66,10 @@ LeftNavigation As CanvasComponent:
         PaddingTop: =15
         Width: =70
         ZIndex: =2
+
+    Icon5 As icon.Add:
+        Icon: =Icon.Add
+        OnSelect: =
+        Y: =101
+        ZIndex: =3
 
