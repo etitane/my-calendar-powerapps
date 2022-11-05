@@ -46,7 +46,7 @@ LeftNavigation As CanvasComponent:
         Icon7 As icon.Person:
             Height: =50
             Icon: =ThisItem.Icon
-            OnSelect: =Select(Parent)
+            OnSelect: =Navigate(ThisItem.Screen, Fade)
             Y: =15
             ZIndex: =2
 
