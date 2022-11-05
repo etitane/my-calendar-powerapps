@@ -1,16 +1,27 @@
-Screen2 As screen:
-    Height: =Max(App.Height, App.DesignHeight)
+"Screen1 As screen.'tabletLayout_Calendar_ver3.0'":
     OnVisible: |-
-        =/*resets calendar view and date selection to today*/
-        Set(_calendarVisible, true);
-        Set(_dateSelected, Today());
+        =Set(_dateSelected, Today());
         Set(_firstDayOfMonth, DateAdd(Today(), 1 - Day(Today()), Days));
         Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), Days));
         Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, Months), -1, Days));
-        ClearCollect(colData, Filter('Events', 'Created On' >= _firstDayOfMonth && 'Created On' <= _lastDayOfMonth));
-    Width: =Max(App.Width, App.DesignWidth)
+        Set(_minDate, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth)-2+1), Days));
+        Set(_maxDate, DateAdd(DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth)-2+1), Days), 35, Days));
 
-    LblMonthSelected1_1 As label:
+    RectQuickActionBar1 As rectangle:
+        Height: =64
+        Width: =Parent.Width
+        ZIndex: =2
+
+    LblAppName1 As label:
+        Height: =64
+        PaddingLeft: =0
+        Text: ="Calendar"
+        Width: =Parent.Width - Self.X * 2
+        Wrap: =false
+        X: =32
+        ZIndex: =3
+
+    LblMonthSelected1 As label:
         Align: =Align.Center
         Height: =50
         Size: =18
@@ -18,20 +29,19 @@ Screen2 As screen:
         Visible: =_calendarVisible
         Width: =419
         Wrap: =false
-        X: =509
-        Y: =91
-        ZIndex: =1
+        X: =422
+        Y: =136
+        ZIndex: =7
 
-    iconPrevMonth1_1 As icon.ChevronLeft:
+    iconPrevMonth1 As icon.ChevronLeft:
         Height: =50
         Icon: =Icon.ChevronLeft
-        OnSelect: |-
+        OnSelect: |
             =/*changes month view to previous month*/
             Set(_firstDayOfMonth, DateAdd(_firstDayOfMonth, -1, Months));
             Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), Days));
             Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, Months), -1, Days));
             /*collects calendar events for all days in current month view. Updates _minDate to prevent duplicate data collection if user returns to this month view*/
-            If(_minDate > _firstDayOfMonth, Set(_minDate, _firstDayOfMonth);)
         PaddingBottom: =7
         PaddingLeft: =7
         PaddingRight: =7
@@ -40,20 +50,19 @@ Screen2 As screen:
         Tooltip: ="View previous month"
         Visible: =_calendarVisible
         Width: =59
-        X: =509
-        Y: =91
-        ZIndex: =2
+        X: =422
+        Y: =136
+        ZIndex: =8
 
-    iconNextMonth1_1 As icon.ChevronRight:
+    iconNextMonth1 As icon.ChevronRight:
         Height: =50
         Icon: =Icon.ChevronRight
-        OnSelect: |-
+        OnSelect: |
             =/*changes month view to next month*/
             Set(_firstDayOfMonth, DateAdd(_firstDayOfMonth, 1, Months));
             Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), Days));
             /*collects calendar events for all days in current month view. Updates _maxDate to prevent duplicate data collection if user returns to this month view*/
             Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, Months), -1, Days));
-            If(_lastDayOfMonth > _maxDate, Set(_maxDate, _lastDayOfMonth); )
         PaddingBottom: =7
         PaddingLeft: =7
         PaddingRight: =7
@@ -62,121 +71,96 @@ Screen2 As screen:
         Tooltip: ="View next month"
         Visible: =_calendarVisible
         Width: =59
-        X: =869
-        Y: =91
-        ZIndex: =3
+        X: =782
+        Y: =136
+        ZIndex: =9
 
-    WeekdayGallery1_1 As gallery.WeekdayGallery:
+    WeekdayGallery1 As gallery.WeekdayGallery:
         AccessibleLabel: ="Days of the week"
-        Height: =33
+        Height: =45
         Items: =Calendar.WeekdaysShort()
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =178
+        TemplateSize: =60
         Visible: =_calendarVisible
-        Width: =1255
-        X: =91
-        Y: =175
-        ZIndex: =4
+        Width: =420
+        X: =422
+        Y: =186
+        ZIndex: =10
 
-        Title1_1 As label:
+        Title2 As label:
             Align: =Align.Center
-            Color: =RGBA(0, 18, 107, 1)
-            Height: =WeekdayGallery1_1.TemplateHeight
+            Height: =WeekdayGallery1.TemplateHeight
             OnSelect: =Select(Parent)
-            Size: |+
-                =30
-                
+            Size: =17 * WeekdayGallery1.TemplateWidth / 77
             Text: =ThisItem.Value
             VerticalAlign: =Middle
-            Width: =WeekdayGallery1_1.TemplateWidth
+            Width: =WeekdayGallery1.TemplateWidth
             Wrap: =false
-            X: =WeekdayGallery1_1.TemplateWidth / 2 - Self.Width / 2
-            Y: =WeekdayGallery1_1.TemplateHeight / 2 - Self.Height / 2
+            X: =WeekdayGallery1.TemplateWidth / 2 - Self.Width / 2
+            Y: =WeekdayGallery1.TemplateHeight / 2 - Self.Height / 2
             ZIndex: =1
 
-    MonthDayGallery1_1 As gallery.MonthDayGallery:
+    MonthDayGallery1 As gallery.MonthDayGallery:
         AccessibleLabel: ="Days of selected month"
-        BorderThickness: =1
-        Height: =515
+        Height: =508
         Items: =[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19, 20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41]
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =90
+        TemplateSize: =91
         Visible: =_calendarVisible
-        Width: =1255
+        Width: =1197
         WrapCount: =7
-        X: =91
-        Y: =222
-        ZIndex: =5
+        X: =122
+        Y: =231
+        ZIndex: =11
 
-        Circle1_1 As circle:
+        Circle1 As circle:
             Height: =Self.Width
             OnSelect: =Select(Parent)
             Visible: |-
                 =/*Visible if calendar events are found on this day*/               
-                //CountRows(Filter(MyCalendarEvents, DateValue(Text(Start)) = DateAdd(_firstDayInView,ThisItem.Value,Days))) > 0 && !Subcircle1_1.Visible && Title2_1.Visible
-                !IsBlank(LookUp(Events, 'Created On' = DateAdd(_firstDayInView,ThisItem.Value,Days)).Name)
+                //CountRows(Filter(MyCalendarEvents, DateValue(Text(Start)) = DateAdd(_firstDayInView,ThisItem.Value,Days))) > 0 && !Subcircle1.Visible && Title3.Visible
             Width: =6.5
-            X: =84
-            Y: =67
+            X: =MonthDayGallery1.TemplateWidth / 2 - Self.Width / 2
+            Y: =MonthDayGallery1.TemplateHeight * (0.75)
             ZIndex: =1
 
-        Subcircle1_1 As circle:
-            Height: =3 * Title2_1.Size
+        Subcircle1 As circle:
+            Height: =35
             OnSelect: =Select(Parent)
-            Visible: =And(DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, Title2_1.Visible)
-            Width: =Self.Height
+            Visible: =And(DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, Title3.Visible)
+            Width: =40
             X: =65
             ZIndex: =2
 
-        Title2_1 As label:
+        Title3 As label:
             Align: =Align.Center
             BorderColor: =RGBA(0, 0, 0, 0)
-            Color: =If(DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, RGBA(255, 255, 255, 1), DateAdd(_firstDayInView, ThisItem.Value) = Today(), RGBA(47, 41, 43, 1), LblMonthSelected1_1.Color)
+            Color: =If(DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, RGBA(255, 255, 255, 1), DateAdd(_firstDayInView, ThisItem.Value) = Today(), RGBA(47, 41, 43, 1), LblMonthSelected1.Color)
             Fill: |-
                 =/*Fill value changes if the gallery item day = today, or if it lies outside of the current month*/             
                 If(
                     /*Date selected is today*/
                     DateAdd(_firstDayInView, ThisItem.Value) = Today() && DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, RGBA(0,0,0,0),
                     /*Today when it is not selected*/
-                    DateAdd(_firstDayInView, ThisItem.Value) = Today(), ColorFade(Subcircle1_1.Fill, 0.67), 
+                    DateAdd(_firstDayInView, ThisItem.Value) = Today(), ColorFade(Subcircle1.Fill, 0.67), 
                     /*The day is outside the range of the currently selected month*/
                     Abs(Self.Text - ThisItem.Value) > 10,RGBA(200, 200, 200, 0.3), RGBA(0, 0, 0, 0))
             FocusedBorderColor: =Self.Color
             FocusedBorderThickness: =2
-            Height: =36
+            Height: =22
             OnSelect: =Set(_dateSelected, DateAdd(_firstDayInView, ThisItem.Value, Days))
-            Size: =14
+            Size: |
+                =14
             TabIndex: =0
             Text: =Day(DateAdd(_firstDayInView,ThisItem.Value,Days))
             VerticalAlign: =Middle
             Visible: |-
                 =/*This item is in a row containing no days of the visible month. It is in the row after the row where the last day of the month occurs*/ 
                  !(DateAdd(_firstDayInView,ThisItem.Value,Days) - Weekday(DateAdd(_firstDayInView,ThisItem.Value,Days)) + 1 > _lastDayOfMonth)
-            Width: =172
+            Width: =171
             Wrap: =false
             ZIndex: =3
-
-        Gallery4 As gallery.galleryVertical:
-            Height: =54
-            Items: |
-                =Filter('Events', 'Created On' = DateAdd(_firstDayInView,ThisItem.Value,Days))
-            Layout: =Layout.Vertical
-            TemplateSize: =19
-            Width: =173
-            Y: =36
-            ZIndex: =4
-
-            Button7 As button:
-                Height: =17
-                OnSelect: =Select(Parent)
-                Text: =ThisItem.Name
-                Width: =163
-                ZIndex: =1
-
-    LeftNavigation_1 As LeftNavigation:
-        Width: =LeftNavigation_1.MenuWidth
-        ZIndex: =6
 
