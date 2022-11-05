@@ -34,7 +34,7 @@ LeftNavigation As CanvasComponent:
 
     "GalleryNavigation As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =Parent.Height-IconHamburger.Height
-        Items: =CustomGallerySample
+        Items: =LeftNavigation.NavItem
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =70
@@ -63,7 +63,7 @@ LeftNavigation As CanvasComponent:
         PaddingRight: =0
         PaddingTop: =0
         Size: =16
-        Text: ="Text"
+        Text: =ThisItem.Title
         Width: =Parent.Width
         Y: =65
         ZIndex: =5
