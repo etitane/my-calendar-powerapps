@@ -62,6 +62,6 @@ LeftNavigation As CanvasComponent:
 
     Icon6 As icon.Cancel:
         Icon: =Icon.Cancel
-        Y: =180
+        Y: =186
         ZIndex: =4
 
