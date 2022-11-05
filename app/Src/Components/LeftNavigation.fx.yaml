@@ -21,12 +21,12 @@ LeftNavigation As CanvasComponent:
     ZIndex: =1
 
     "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-        Items: =CustomGallerySample
+        Items: =LeftNavigation.NavItem
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)
-        Width: =153.83333333333331
-        Y: =135
+        Width: =Parent.Width
+        Y: =81
         ZIndex: =1
 
         Image2 As image:
@@ -44,7 +44,7 @@ LeftNavigation As CanvasComponent:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.SampleHeading
+            Text: =ThisItem.Icon
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - Image2.Width - 104
             X: =153.83333333333331
@@ -58,7 +58,7 @@ LeftNavigation As CanvasComponent:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.SampleText
+            Text: =ThisItem.Title
             VerticalAlign: =VerticalAlign.Top
             Width: =Title2.Width
             X: =153.83333333333331

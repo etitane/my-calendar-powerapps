@@ -642,7 +642,7 @@
               },
               {
                 "Category": "Data",
-                "InvariantScript": "ThisItem.SampleHeading",
+                "InvariantScript": "ThisItem.Icon",
                 "Property": "Text",
                 "RuleProviderType": "Unknown"
               },
@@ -1171,7 +1171,7 @@
               },
               {
                 "Category": "Data",
-                "InvariantScript": "ThisItem.SampleText",
+                "InvariantScript": "ThisItem.Title",
                 "Property": "Text",
                 "RuleProviderType": "Unknown"
               },
@@ -1528,7 +1528,14 @@
           }
         ],
         "ControlPropertyState": [
-          "Items",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "CustomGallerySample",
+            "InvariantPropertyName": "Items",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "WrapCount",
           "TemplateSize",
           "TemplatePadding",
@@ -1549,7 +1556,14 @@
           "HoverFill",
           "X",
           "Y",
-          "Width",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "153.83333333333331",
+            "InvariantPropertyName": "Width",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "Height",
           "ZIndex"
         ],
@@ -1570,7 +1584,7 @@
         "Rules": [
           {
             "Category": "Data",
-            "InvariantScript": "CustomGallerySample",
+            "InvariantScript": "LeftNavigation.NavItem",
             "Property": "Items",
             "RuleProviderType": "Unknown"
           },
@@ -1690,13 +1704,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "135",
+            "InvariantScript": "81",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "153.83333333333331",
+            "InvariantScript": "Parent.Width",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -1775,7 +1789,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638032309262254884",
+    "LastModifiedTimestamp": "638032311129410824",
     "Name": "LeftNavigation",
     "Rules": [
       {
@@ -1865,7 +1879,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638032309262254884",
+  "LastModifiedTimestamp": "638032311129410824",
   "Name": "f7c2e4baec1d40e0ba77a8fc625c59b1",
   "OverridableProperties": {},
   "Version": "638032271152912589"
