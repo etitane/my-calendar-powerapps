@@ -20,8 +20,22 @@
           "DisplayMode",
           "X",
           "Y",
-          "Width",
-          "Height",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "64",
+            "InvariantPropertyName": "Width",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "64",
+            "InvariantPropertyName": "Height",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "BorderStyle",
           "BorderColor",
           "DisabledBorderColor",
@@ -52,6 +66,14 @@
             "AutoRuleBindingEnabled": false,
             "AutoRuleBindingString": "",
             "InvariantPropertyName": "PaddingBottom",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "PaddingRight",
             "IsLockable": false,
             "NameMapSourceSchema": "?"
           }
@@ -145,13 +167,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "64",
+            "InvariantScript": "70\n",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "64",
+            "InvariantScript": "70",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -226,6 +248,12 @@
             "InvariantScript": "15",
             "Property": "PaddingBottom",
             "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "15",
+            "Property": "PaddingRight",
+            "RuleProviderType": "Unknown"
           }
         ],
         "StyleName": "defaultIconStyle",
@@ -274,7 +302,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638032274614596401",
+    "LastModifiedTimestamp": "638032274956536428",
     "Name": "LeftNavigation",
     "Rules": [
       {
@@ -333,7 +361,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638032274614596401",
+  "LastModifiedTimestamp": "638032274956536428",
   "Name": "f7c2e4baec1d40e0ba77a8fc625c59b1",
   "OverridableProperties": {},
   "Version": "638032271152912589"

@@ -7,9 +7,13 @@ LeftNavigation As CanvasComponent:
     ZIndex: =1
 
     Icon1 As icon.Hamburger:
+        Height: =70
         Icon: =Icon.Hamburger
         PaddingBottom: =15
         PaddingLeft: =15
+        PaddingRight: =15
         PaddingTop: =15
+        Width: |
+            =70
         ZIndex: =1
 
