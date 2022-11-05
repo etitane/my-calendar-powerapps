@@ -1,7 +1,7 @@
 LeftNavigation As CanvasComponent:
     Fill: =RGBA(244, 244, 244, 1)
     Height: =Max(App.Height, App.DesignHeight)
-    MenuWidth: =If(varOpenMenu, Max(App.Width, App.DesignWidth)/13+40, 70)
+    MenuWidth: =If(varOpenMenu, Max(App.Width, App.DesignWidth)/12+40, 70)
     NavItem: |-
         =Table(
             {
@@ -39,8 +39,8 @@ LeftNavigation As CanvasComponent:
             Text: =ThisItem.Title
             VerticalAlign: =VerticalAlign.Top
             Width: =97
-            X: =55
-            Y: =25
+            X: =54
+            Y: =24
             ZIndex: =1
 
         Icon7 As icon.Person:
