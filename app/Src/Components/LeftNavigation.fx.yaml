@@ -30,13 +30,6 @@ LeftNavigation As CanvasComponent:
         Y: =70
         ZIndex: =1
 
-        Image4 As image:
-            Height: =96
-            OnSelect: =Navigate(ThisItem.Screen, Fade)
-            Width: =70
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =1
-
         Title4 As label:
             Align: =Align.Center
             Height: =33
@@ -53,7 +46,7 @@ LeftNavigation As CanvasComponent:
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - 1
+            Y: =126
             ZIndex: =4
 
     Icon3 As icon.Hamburger:
@@ -68,8 +61,13 @@ LeftNavigation As CanvasComponent:
         ZIndex: =2
 
     Icon5 As icon.Add:
-        Icon: =Icon.Add
-        OnSelect: =
-        Y: =101
+        Icon: =Icon.Person
+        OnSelect: =true
+        Y: =89
         ZIndex: =3
+
+    Icon6 As icon.Cancel:
+        Icon: =Icon.Cancel
+        Y: =226
+        ZIndex: =4
 
