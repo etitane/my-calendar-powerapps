@@ -21,25 +21,25 @@ LeftNavigation As CanvasComponent:
     ZIndex: =1
 
     "Gallery2 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
-        Height: =500
+        Height: =692
         Items: =LeftNavigation.NavItem
         Layout: =Layout.Vertical
         OnSelect: =Navigate(ThisItem.Screen, Fade)
         TemplatePadding: =0
         TemplateSize: =71
-        Width: =151
+        Width: =153.83333333333331
         Y: =67
         ZIndex: =1
 
         Title6 As label:
-            Align: =Align.Center
             Height: =44
             OnSelect: =Navigate(ThisItem.Screen, Fade)
+            PaddingLeft: =6
             Size: =16
             Text: =ThisItem.Title
             VerticalAlign: =VerticalAlign.Top
-            Width: =97
-            X: =54
+            Width: =85
+            X: =65
             Y: =24
             ZIndex: =1
 
@@ -47,7 +47,7 @@ LeftNavigation As CanvasComponent:
             Height: =50
             Icon: =ThisItem.Icon
             OnSelect: =Navigate(ThisItem.Screen, Fade)
-            Y: =7
+            Width: =54
             ZIndex: =2
 
     Icon3 As icon.Hamburger:
