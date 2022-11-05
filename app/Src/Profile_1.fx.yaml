@@ -1,0 +1,214 @@
+Profile_1 As screen:
+
+    Label2_5 As label:
+        Color: =RGBA(39, 67, 125, 1)
+        Size: =17
+        Text: ="MyCalendar"
+        X: =88
+        Y: =34
+        ZIndex: =1
+
+    Button6_2 As button:
+        Color: =White
+        Fill: =RGBA(50, 86, 160, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =66
+        OnSelect: =Save;Back();
+        Size: =17
+        Text: ="Saglabāt un atgriezties"
+        Width: =296
+        X: =991
+        Y: =663
+        ZIndex: =8
+
+    Label2_6 As label:
+        Color: =RGBA(39, 67, 125, 1)
+        DisabledBorderColor: =RGBA(0, 13, 75, 1)
+        FontWeight: =FontWeight.Semibold
+        Size: =30
+        Text: ="Profils"
+        X: =618
+        Y: =34
+        ZIndex: =10
+
+    LeftNavigation_7 As LeftNavigation_3:
+        NavItem: |-
+            =Table(
+                {
+                    Title: "Profile",
+                    Screen: Profile_1,
+                    Icon: Icon.Person
+                },
+                 {
+                    Title: "Logout",
+                    Screen: Login,
+                    Icon: Cancel
+                }
+            )
+        Width: =LeftNavigation_7.MenuWidth
+        ZIndex: =11
+
+    Form4_1 As form:
+        BorderStyle: =BorderStyle.Dashed
+        BorderThickness: =3
+        DataSource: =Lietotajs
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =501
+        Item: =Gallery3.Selected
+        NumberOfColumns: =1
+        Width: =862
+        X: =173
+        Y: =127
+        ZIndex: =12
+
+        Username_DataCard2 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Dotted
+            BorderThickness: =0
+            DataField: ="craad_name"
+            Default: =ThisItem.Username
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Lietotajs],DataSourceInfo.DisplayName,"craad_name")
+            Fill: =RGBA(227, 234, 243, 1)
+            Height: =105
+            Required: =true
+            Width: =859
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey13 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(39, 67, 125, 1)
+                BorderThickness: =1
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue12 As label:
+                BorderThickness: =1
+                DisabledColor: =RGBA(39, 67, 125, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =22
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =14
+                Text: =Parent.Default
+                Underline: =true
+                Width: =337
+                X: =235
+                Y: =56
+                ZIndex: =2
+
+            Label5 As label:
+                Height: =42
+                Size: =14
+                Text: |-
+                    ="Password change for:"
+                Underline: =true
+                Width: =225
+                X: =30
+                Y: =43.5
+                ZIndex: =3
+
+        Password_DataCard3_1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="craad_password"
+            Default: =ThisItem.Password
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Lietotajs],DataSourceInfo.DisplayName,"craad_password")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =205
+            MaxLength: =DataSourceInfo([@Lietotajs], DataSourceInfo.MaxLength, "craad_password")
+            Required: =true
+            Update: =DataCardValue26_1.Text
+            Width: =859
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey27_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue26_1 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey27_1.Y + DataCardKey27_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage23_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue26_1.Y + DataCardValue26_1.Height
+                ZIndex: =3
+
+            StarVisible23_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey27_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey27_1.Y
+                ZIndex: =4
+
+            TextInput3_1 As text:
+                BorderColor: =RGBA(0, 13, 75, 1)
+                Default: ="Text input"
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                X: =30
+                Y: =147
+                ZIndex: =5
+
+            Label4_1 As label:
+                Color: =RGBA(0, 18, 107, 1)
+                Text: ="Repeat New Password"
+                Width: =205
+                X: =30
+                Y: =97
+                ZIndex: =6
+
+            StarVisible23_2 As label:
+                Align: =Align.Center
+                Height: =DataCardKey27_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =104
+                ZIndex: =7
+

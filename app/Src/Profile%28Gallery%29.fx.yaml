@@ -1,0 +1,110 @@
+"'Profile(Gallery)' As screen":
+
+    Label2_3 As label:
+        Color: =RGBA(39, 67, 125, 1)
+        Size: =17
+        Text: ="MyCalendar"
+        X: =88
+        Y: =34
+        ZIndex: =1
+
+    "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        Items: =Filter(Lietotajs, 'Lietotajs (Views)'.'Active Lietotajs')
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(104, Self.Height - 60)
+        X: =238
+        Y: =125
+        ZIndex: =1
+
+        Title3 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'First name'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =16
+            ZIndex: =1
+
+        Subtitle3 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Surname
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =Title3.Y + Title3.Height + 4
+            ZIndex: =2
+
+        NextArrow3 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =3
+
+        Separator4 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+    Button6_1 As button:
+        Color: =White
+        Fill: =RGBA(50, 86, 160, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =66
+        OnSelect: =Save;Back();
+        Size: =17
+        Text: ="Saglabāt un atgriezties"
+        Width: =296
+        X: =991
+        Y: =663
+        ZIndex: =8
+
+    Label2_4 As label:
+        Color: =RGBA(39, 67, 125, 1)
+        DisabledBorderColor: =RGBA(0, 13, 75, 1)
+        FontWeight: =FontWeight.Semibold
+        Size: =30
+        Text: ="Profils"
+        X: =618
+        Y: =34
+        ZIndex: =10
+
+    LeftNavigation_6 As LeftNavigation_3:
+        NavItem: |-
+            =Table(
+                {
+                    Title: "Profile",
+                    Screen: 'Profile(Gallery)',
+                    Icon: Icon.Person
+                },
+                 {
+                    Title: "Logout",
+                    Screen: Login,
+                    Icon: Cancel
+                }
+            )
+        Width: =LeftNavigation_6.MenuWidth
+        ZIndex: =11
+

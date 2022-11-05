@@ -784,7 +784,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Date_Column1",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -877,7 +877,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Details_Column1",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -970,7 +970,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "event_type_Column1",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1158,7 +1158,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Lietotajs_Column1",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1252,7 +1252,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Name_Column1",
-      "ParentIndex": 0,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1350,7 +1350,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Place_Column1",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

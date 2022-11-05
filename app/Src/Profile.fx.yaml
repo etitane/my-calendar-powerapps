@@ -29,6 +29,7 @@ Profile As screen:
         DataSource: =Lietotajs
         Fill: =RGBA(241, 244, 249, 1)
         Height: =450
+        Item: =Gallery3.Selected
         NumberOfColumns: =1
         Width: =596
         X: =111
@@ -245,34 +246,34 @@ Profile As screen:
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@Lietotajs],DataSourceInfo.DisplayName,"createdon")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =94
+            Height: =40
             Required: =false
             Width: =596
             X: =0
             Y: =3
-            ZIndex: =10
+            ZIndex: =1
 
-            DataCardKey13 As label:
+            DataCardKey3 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
-                X: =10
-                Y: =24
+                X: =30
+                Y: =10 + (DataCardValue3.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
-            DataCardValue12 As label:
+            DataCardValue3 As label:
+                AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
-                Height: =48
-                Overflow: =Overflow.Scroll
+                Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
                 Text: =Parent.Default
                 Width: =(Parent.Width - 60) * 0.6
-                X: =243
-                Y: =24
+                X: =DataCardKey3.X + DataCardKey3.Width
+                Y: =10
                 ZIndex: =2
 
     Label2_2 As label:
@@ -293,6 +294,7 @@ Profile As screen:
         DataSource: =Lietotajs
         Fill: =RGBA(241, 244, 249, 1)
         Height: =450
+        Item: =Gallery3.Selected
         NumberOfColumns: =1
         Width: =425
         X: =814
@@ -306,7 +308,7 @@ Profile As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Lietotajs],DataSourceInfo.DisplayName,"craad_password")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =286
+            Height: =220
             MaxLength: =DataSourceInfo([@Lietotajs], DataSourceInfo.MaxLength, "craad_password")
             Required: =true
             Update: =DataCardValue26.Text
@@ -366,6 +368,19 @@ Profile As screen:
                 Wrap: =false
                 Y: =DataCardKey27.Y
                 ZIndex: =4
+
+            TextInput3 As text:
+                Default: ="Text input"
+                X: =30
+                Y: =147
+                ZIndex: =5
+
+            Label4 As label:
+                Text: ="Repeat New Password"
+                Width: =205
+                X: =30
+                Y: =97
+                ZIndex: =6
 
         Username_DataCard5 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
