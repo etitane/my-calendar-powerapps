@@ -99,7 +99,7 @@
         "Name": "Icon1",
         "Parent": "LeftNavigation",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 0,
+        "PublishOrderIndex": 91,
         "Rules": [
           {
             "Category": "Design",
@@ -314,11 +314,25 @@
       },
       "X",
       "Y",
-      "ZIndex"
+      "ZIndex",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "100",
+        "InvariantPropertyName": "MenuWidth",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      }
     ],
-    "LastModifiedTimestamp": "638032275920170141",
+    "LastModifiedTimestamp": "638032277354043700",
     "Name": "LeftNavigation",
     "Rules": [
+      {
+        "Category": "Data",
+        "InvariantScript": "If(varOpenMenu, Max(App.Width, App.DesignWidth)/15, 70)",
+        "Property": "MenuWidth",
+        "RuleProviderType": "System"
+      },
       {
         "Category": "Design",
         "InvariantScript": "1",
@@ -366,7 +380,17 @@
   },
   "ComponentType": "CanvasComponent",
   "CustomGroupControlTemplateName": "",
-  "CustomProperties": [],
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "MenuWidth",
+      "Hidden": true,
+      "Name": "MenuWidth",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "The width of my component",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
   "FirstParty": true,
   "Id": "http://microsoft.com/appmagic/Component",
   "IsComponentLocked": false,
@@ -375,7 +399,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638032275920170141",
+  "LastModifiedTimestamp": "638032277354043700",
   "Name": "f7c2e4baec1d40e0ba77a8fc625c59b1",
   "OverridableProperties": {},
   "Version": "638032271152912589"
