@@ -1,2 +1,36 @@
 Profile As screen:
 
+    Label2_1 As label:
+        Text: ="MyCalendar"
+        X: =543
+        Y: =102
+        ZIndex: =1
+
+    TextInput3 As text:
+        Default: =""
+        Height: =44
+        HintText: ="Ievadt jaunu lietotājvārdu"
+        Width: =302
+        X: =681
+        Y: =198
+        ZIndex: =2
+
+    TextInput4 As text:
+        Default: =""
+        HintText: ="Ievadīt jaunu e-pastu"
+        X: =681
+        Y: =278
+        ZIndex: =3
+
+    TextInput5 As text:
+        Default: =""
+        X: =681
+        Y: =358
+        ZIndex: =4
+
+    Label4 As label:
+        Text: ="Text"
+        X: =236
+        Y: =230
+        ZIndex: =5
+
