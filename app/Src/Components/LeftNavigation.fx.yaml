@@ -36,6 +36,7 @@ LeftNavigation As CanvasComponent:
         Height: =Parent.Height-IconHamburger.Height
         Items: =LeftNavigation.NavItem
         Layout: =Layout.Vertical
+        NavigationStep: =2
         TemplatePadding: =0
         TemplateSize: =70
         Width: =70
@@ -44,6 +45,7 @@ LeftNavigation As CanvasComponent:
 
     Rectangle1 As rectangle:
         Height: =50
+        OnSelect: =Select(IconProfileSettings)
         Width: =10
         Y: =70
         ZIndex: =3
@@ -58,6 +60,7 @@ LeftNavigation As CanvasComponent:
 
     lblTitle As label:
         Height: =60
+        OnSelect: =Navigate(Profile, ScreenTransition.Cover)
         PaddingBottom: =0
         PaddingLeft: =70
         PaddingRight: =0

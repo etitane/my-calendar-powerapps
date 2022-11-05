@@ -391,6 +391,14 @@
             "InvariantPropertyName": "PaddingLeft",
             "IsLockable": false,
             "NameMapSourceSchema": "?"
+          },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "false",
+            "InvariantPropertyName": "OnSelect",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
           }
         ],
         "ControlUniqueId": "113",
@@ -641,6 +649,12 @@
             "InvariantScript": "Self.Color",
             "Property": "PressedColor",
             "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Behavior",
+            "InvariantScript": "Navigate(Profile, ScreenTransition.Cover)",
+            "Property": "OnSelect",
+            "RuleProviderType": "Unknown"
           }
         ],
         "StyleName": "defaultLabelStyle",
@@ -766,7 +780,15 @@
             "IsLockable": false,
             "NameMapSourceSchema": "?"
           },
-          "ZIndex"
+          "ZIndex",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "NavigationStep",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          }
         ],
         "ControlUniqueId": "102",
         "HasDynamicProperties": false,
@@ -926,6 +948,12 @@
             "InvariantScript": "Self.BorderColor",
             "Property": "LoadingSpinnerColor",
             "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "2",
+            "Property": "NavigationStep",
+            "RuleProviderType": "Unknown"
           }
         ],
         "StyleName": "defaultGalleryStyle",
@@ -976,7 +1004,15 @@
           },
           "ZIndex",
           "BorderThickness",
-          "FocusedBorderThickness"
+          "FocusedBorderThickness",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "false",
+            "InvariantPropertyName": "OnSelect",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          }
         ],
         "ControlUniqueId": "109",
         "HasDynamicProperties": false,
@@ -1081,6 +1117,12 @@
             "Category": "Design",
             "InvariantScript": "2",
             "Property": "FocusedBorderThickness",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Behavior",
+            "InvariantScript": "Select(IconProfileSettings)",
+            "Property": "OnSelect",
             "RuleProviderType": "Unknown"
           }
         ],
@@ -1421,7 +1463,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638032301159094180",
+    "LastModifiedTimestamp": "638032304418270060",
     "Name": "LeftNavigation",
     "Rules": [
       {
@@ -1511,7 +1553,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638032301159094180",
+  "LastModifiedTimestamp": "638032304418270060",
   "Name": "f7c2e4baec1d40e0ba77a8fc625c59b1",
   "OverridableProperties": {},
   "Version": "638032271152912589"

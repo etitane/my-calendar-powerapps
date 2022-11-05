@@ -1,6 +1,6 @@
 {
   "ComponentIndexes": {
-    "LeftNavigation": 5,
+    "LeftNavigation": 6,
     "LeftNavigation_1": 5
   },
   "ControlUniqueGuids": {},
@@ -86,6 +86,7 @@
     "Password_DataCard1": 26,
     "Place_Column1": 58,
     "Place_DataCard1": 87,
+    "Profile": 114,
     "Rectangle1": 109,
     "Registration": 3,
     "Screen2": 32,
@@ -112,7 +113,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/05/2022 07:28:43",
+  "HeaderLastSavedDateTimeUTC": "11/05/2022 07:34:04",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "a9b6b21f-9d5b-4c79-9bac-ce83e4895a1a": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/68587bd828474d07884216523403799d\""
@@ -241,6 +242,7 @@
     "Password_DataCard1": 28,
     "Place_Column1": 39,
     "Place_DataCard1": 68,
+    "Profile": 0,
     "Rectangle1": 95,
     "Registration": 0,
     "Screen2": 0,
@@ -291,7 +293,7 @@
       "typedDataCard": 11
     },
     "DeserializationLoadTime": 4.1748915,
-    "ErrorCount": 0
+    "ErrorCount": 1
   },
   "WasLocalDatabaseReferencesEmpty": false
 }
