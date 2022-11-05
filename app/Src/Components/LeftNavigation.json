@@ -862,13 +862,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "150",
+            "InvariantScript": "153.83333333333331",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "400",
+            "InvariantScript": "Parent.Height",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -1358,7 +1358,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638032333360243256",
+    "LastModifiedTimestamp": "638032334438556105",
     "Name": "LeftNavigation",
     "Rules": [
       {
@@ -1399,7 +1399,7 @@
       },
       {
         "Category": "Design",
-        "InvariantScript": "300",
+        "InvariantScript": "Max(App.Height, App.DesignHeight)",
         "Property": "Height",
         "RuleProviderType": "System"
       },
@@ -1448,7 +1448,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638032333360243256",
+  "LastModifiedTimestamp": "638032334438556105",
   "Name": "f7c2e4baec1d40e0ba77a8fc625c59b1",
   "OverridableProperties": {},
   "Version": "638032271152912589"
