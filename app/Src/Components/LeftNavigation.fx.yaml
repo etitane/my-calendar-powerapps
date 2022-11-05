@@ -7,7 +7,7 @@ LeftNavigation As CanvasComponent:
             {
                 Title: "Profile",
                 Screen: Profile,
-                Icon: Person
+                Icon: Icon.Person
             },
              {
                 Title: "Logout",
@@ -21,7 +21,7 @@ LeftNavigation As CanvasComponent:
     ZIndex: =1
 
     "Gallery2 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
-        Height: =Parent.Height
+        Height: =500
         Items: =LeftNavigation.NavItem
         Layout: =Layout.Vertical
         OnSelect: =Navigate(ThisItem.Screen, Fade)
@@ -44,6 +44,7 @@ LeftNavigation As CanvasComponent:
             ZIndex: =1
 
         Icon7 As icon.Person:
+            Height: =50
             Icon: =ThisItem.Icon
             OnSelect: =Select(Parent)
             Y: =15
