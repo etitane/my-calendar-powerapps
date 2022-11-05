@@ -368,8 +368,22 @@
               "PressedFill",
               "HoverFill",
               "DisplayMode",
-              "X",
-              "Y",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "11",
+                "InvariantPropertyName": "X",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "6",
+                "InvariantPropertyName": "Y",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
               "Width",
               {
                 "AFDDataSourceName": "",
@@ -506,13 +520,13 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "0",
+                "InvariantScript": "6",
                 "Property": "X",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "0",
+                "InvariantScript": "5",
                 "Property": "Y",
                 "RuleProviderType": "Unknown"
               },
@@ -524,7 +538,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "50",
+                "InvariantScript": "51",
                 "Property": "Height",
                 "RuleProviderType": "Unknown"
               },
@@ -1244,7 +1258,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638032386825077597",
+    "LastModifiedTimestamp": "638032387403665245",
     "Name": "LeftNavigation",
     "Rules": [
       {
@@ -1334,7 +1348,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638032386825077597",
+  "LastModifiedTimestamp": "638032387403665245",
   "Name": "f7c2e4baec1d40e0ba77a8fc625c59b1",
   "OverridableProperties": {},
   "Version": "638032271152912589"
