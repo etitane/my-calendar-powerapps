@@ -102,3 +102,9 @@ Calendar As screen:
         Y: =40
         ZIndex: =2
 
+    Button5 As button:
+        Text: ="Button"
+        X: =768
+        Y: =232
+        ZIndex: =3
+
