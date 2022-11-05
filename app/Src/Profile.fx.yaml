@@ -306,7 +306,7 @@ Profile As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Lietotajs],DataSourceInfo.DisplayName,"craad_password")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =304
+            Height: =286
             MaxLength: =DataSourceInfo([@Lietotajs], DataSourceInfo.MaxLength, "craad_password")
             Required: =true
             Update: =DataCardValue26.Text
