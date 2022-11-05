@@ -26,9 +26,9 @@ LeftNavigation As CanvasComponent:
         Layout: =Layout.Vertical
         OnSelect: =Navigate(ThisItem.Screen, Fade)
         TemplatePadding: =0
-        TemplateSize: =Min(96, Self.Height - 60)
-        Width: =153.83333333333331
-        Y: =70
+        TemplateSize: =71
+        Width: =151
+        Y: =67
         ZIndex: =1
 
         Title6 As label:
