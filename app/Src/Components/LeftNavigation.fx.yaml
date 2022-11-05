@@ -30,13 +30,13 @@ LeftNavigation As CanvasComponent:
         ZIndex: =2
 
     Rectangle1 As rectangle:
-        Height: =60
+        Height: =50
         Width: =10
         Y: =70
         ZIndex: =3
 
     Icon2 As icon.Person:
-        Height: =60
+        Height: =50
         Icon: =Icon.Person
         Width: =52
         X: =6

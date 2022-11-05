@@ -681,7 +681,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "60",
+            "InvariantScript": "50",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -737,7 +737,14 @@
           "X",
           "Y",
           "Width",
-          "Height",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "60",
+            "InvariantPropertyName": "Height",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "BorderStyle",
           "BorderColor",
           "DisabledBorderColor",
@@ -843,7 +850,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "60",
+            "InvariantScript": "50",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -956,7 +963,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638032284286675043",
+    "LastModifiedTimestamp": "638032284866018483",
     "Name": "LeftNavigation",
     "Rules": [
       {
@@ -1031,7 +1038,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638032284286675043",
+  "LastModifiedTimestamp": "638032284866018483",
   "Name": "f7c2e4baec1d40e0ba77a8fc625c59b1",
   "OverridableProperties": {},
   "Version": "638032271152912589"
