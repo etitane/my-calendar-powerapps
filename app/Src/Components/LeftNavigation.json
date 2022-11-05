@@ -76,6 +76,14 @@
             "InvariantPropertyName": "PaddingRight",
             "IsLockable": false,
             "NameMapSourceSchema": "?"
+          },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "false",
+            "InvariantPropertyName": "OnSelect",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
           }
         ],
         "ControlUniqueId": "101",
@@ -254,6 +262,12 @@
             "InvariantScript": "15",
             "Property": "PaddingRight",
             "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Behavior",
+            "InvariantScript": "Set(varOpenMenu, !varOpenMenu)",
+            "Property": "OnSelect",
+            "RuleProviderType": "Unknown"
           }
         ],
         "StyleName": "defaultIconStyle",
@@ -302,7 +316,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638032274956536428",
+    "LastModifiedTimestamp": "638032275920170141",
     "Name": "LeftNavigation",
     "Rules": [
       {
@@ -361,7 +375,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638032274956536428",
+  "LastModifiedTimestamp": "638032275920170141",
   "Name": "f7c2e4baec1d40e0ba77a8fc625c59b1",
   "OverridableProperties": {},
   "Version": "638032271152912589"

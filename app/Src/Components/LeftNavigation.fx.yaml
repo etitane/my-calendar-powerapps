@@ -9,6 +9,7 @@ LeftNavigation As CanvasComponent:
     Icon1 As icon.Hamburger:
         Height: =70
         Icon: =Icon.Hamburger
+        OnSelect: =Set(varOpenMenu, !varOpenMenu)
         PaddingBottom: =15
         PaddingLeft: =15
         PaddingRight: =15
