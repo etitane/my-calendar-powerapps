@@ -84,6 +84,7 @@
     "Password_DataCard1": 26,
     "Place_Column1": 58,
     "Place_DataCard1": 87,
+    "Rectangle1": 109,
     "Registration": 3,
     "Screen2": 32,
     "Separator1": 79,
@@ -109,7 +110,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/05/2022 06:55:03",
+  "HeaderLastSavedDateTimeUTC": "11/05/2022 06:56:41",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "a9b6b21f-9d5b-4c79-9bac-ce83e4895a1a": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/68587bd828474d07884216523403799d\""
@@ -145,14 +146,15 @@
   "OrderTemplate": {},
   "OrderXMLTemplate": {
     "button": 3,
-    "circle": 6,
-    "combobox": 9,
-    "datepicker": 7,
-    "dropdown": 8,
+    "circle": 7,
+    "combobox": 10,
+    "datepicker": 8,
+    "dropdown": 9,
     "form": 1,
     "gallery": 5,
     "icon": 4,
     "label": 0,
+    "rectangle": 6,
     "text": 2
   },
   "PublishOrderIndices": {
@@ -235,6 +237,7 @@
     "Password_DataCard1": 28,
     "Place_Column1": 39,
     "Place_DataCard1": 68,
+    "Rectangle1": 94,
     "Registration": 0,
     "Screen2": 0,
     "Separator1": 60,
