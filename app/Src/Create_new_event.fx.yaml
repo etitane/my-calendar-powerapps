@@ -2,7 +2,7 @@ Create_new_event As screen:
     OnVisible: =true
 
     Button1_1 As button:
-        OnSelect: =SubmitForm(Form2_1); Navigate([@Calendar])
+        OnSelect: =SubmitForm(Form2_1); Navigate(Calendar)
         Text: ="Izveidot"
         X: =622
         Y: =674
