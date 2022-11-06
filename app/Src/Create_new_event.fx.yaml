@@ -15,6 +15,24 @@ Create_new_event As screen:
         ZIndex: =3
 
     LeftNavigation_2 As LeftNavigation:
+        NavItem: |-
+            =Table(
+                {
+                    Title: "Profile",
+                    Screen: Profile,
+                    Icon: Icon.Person
+                },
+                {
+                    Title:"Calendar",
+                    Screen:Calendar,
+                    Icon:Icon.CalendarBlank
+                },
+                 {
+                    Title: "Logout",
+                    Screen: Login,
+                    Icon: Cancel
+                }
+            )
         Width: =LeftNavigation_2.MenuWidth
         ZIndex: =4
 
