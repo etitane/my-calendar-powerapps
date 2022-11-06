@@ -22,7 +22,9 @@ Create_new_event As screen:
         DataSource: =Events
         DefaultMode: =FormMode.New
         Height: =620
+        Item: =Defaults(Events)
         NumberOfColumns: =1
+        OnFailure: =true
         OnReset: =true
         OnSuccess: =true
         Width: =584
