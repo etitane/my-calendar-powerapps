@@ -37,7 +37,7 @@ Calendar As screen:
         FocusedBorderThickness: =4
         Height: =50
         HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(199,237,229, 1)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.ChevronLeft
         OnSelect: |-
@@ -52,7 +52,7 @@ Calendar As screen:
         PaddingRight: =7
         PaddingTop: =7
         PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedColor: =RGBA(199,237,229, 1)
         PressedFill: =RGBA(0, 0, 0, 0)
         TabIndex: =0
         Tooltip: ="View previous month"
@@ -71,7 +71,7 @@ Calendar As screen:
         FocusedBorderThickness: =4
         Height: =50
         HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(199,237,229, 1)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.ChevronRight
         OnSelect: |-
@@ -86,7 +86,7 @@ Calendar As screen:
         PaddingRight: =7
         PaddingTop: =7
         PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedColor: =RGBA(199,237,229, 1)
         PressedFill: =RGBA(0, 0, 0, 0)
         TabIndex: =0
         Tooltip: ="View next month"
@@ -257,12 +257,12 @@ Calendar As screen:
         FontWeight: =FontWeight.Semibold
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
+        HoverFill: =ColorFade(RGBA(199,237,229, 1), -10%)
         OnSelect: |-
             =Navigate(Create_new_event,ScreenTransition.Cover,{username1: username1})
-        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        PressedBorderColor: =ColorFade(RGBA(0,143,112, 1), -30%)
         PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =ColorFade(RGBA(0,143,112, 1), -30%)
         Size: =15
         Text: ="Add event"
         X: =1172

@@ -1,42 +1,17 @@
 Event_details As screen:
     LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
 
-    Button1_2 As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderThickness: =4
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 143, 112, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
-        OnSelect: |-
-            =SubmitForm(Form2); Navigate(Calendar, Fade); If(SubmitForm(Form2), Notify("Event is updated!", NotificationType.Success))
-            //Patch(Events,Defaults(Events),{Name:Name.Value})
-        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
-        Size: =15
-        Text: ="Save"
-        X: =632
-        Y: =700
-        ZIndex: =2
-
     Form2 As form:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: =Events
         Fill: =RGBA(199, 237, 229, 1)
-        Height: =634
+        Height: =654
         Item: =varItem
         NumberOfColumns: =1
         Width: =584
         X: =414
         Y: =57
-        ZIndex: =4
+        ZIndex: =1
 
         Details_DataCard2 As typedDataCard.textualMultiLineEditCard:
             BorderColor: =RGBA(0, 143, 112, 1)
@@ -88,12 +63,12 @@ Event_details As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 Height: =80
-                HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+                HoverBorderColor: =RGBA(0, 143, 112, 1)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
-                PressedBorderColor: =RGBA(73, 130, 5, 1)
+                PressedBorderColor: =RGBA(0, 143, 112, 1)
                 PressedColor: =RGBA(51, 51, 51, 1)
                 PressedFill: =RGBA(255, 255, 255, 1)
                 RadiusBottomLeft: =10
@@ -409,12 +384,12 @@ Event_details As screen:
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+                HoverBorderColor: =RGBA(0, 143, 112, 1)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                PressedBorderColor: =RGBA(73, 130, 5, 1)
+                PressedBorderColor: =RGBA(0, 143, 112, 1)
                 PressedColor: =RGBA(51, 51, 51, 1)
                 PressedFill: =RGBA(255, 255, 255, 1)
                 RadiusBottomLeft: =10
@@ -766,11 +741,11 @@ Event_details As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 Format: =TextFormat.Number
-                HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+                HoverBorderColor: =RGBA(0, 143, 112, 1)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
                 PaddingLeft: =5
-                PressedBorderColor: =RGBA(73, 130, 5, 1)
+                PressedBorderColor: =RGBA(0, 143, 112, 1)
                 PressedColor: =RGBA(51, 51, 51, 1)
                 PressedFill: =RGBA(255, 255, 255, 1)
                 RadiusBottomLeft: =10
@@ -880,12 +855,12 @@ Event_details As screen:
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+                HoverBorderColor: =RGBA(0, 143, 112, 1)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                PressedBorderColor: =RGBA(73, 130, 5, 1)
+                PressedBorderColor: =RGBA(0, 143, 112, 1)
                 PressedColor: =RGBA(51, 51, 51, 1)
                 PressedFill: =RGBA(255, 255, 255, 1)
                 RadiusBottomLeft: =10
@@ -947,7 +922,7 @@ Event_details As screen:
 
     LeftNavigation_8 As LeftNavigation_4:
         Width: =LeftNavigation_8.MenuWidth
-        ZIndex: =5
+        ZIndex: =2
 
     Label1_2 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -965,7 +940,7 @@ Event_details As screen:
         Width: =215
         X: =604
         Y: =12
-        ZIndex: =6
+        ZIndex: =3
 
     Label2_4 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -984,5 +959,32 @@ Event_details As screen:
         Width: =175
         X: =239
         Y: =57
-        ZIndex: =7
+        ZIndex: =4
+
+    Button1_2 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderThickness: =4
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 143, 112, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: |-
+            =
+            ColorFade(RGBA(199,237,229, 1), -10%)
+        OnSelect: |-
+            =SubmitForm(Form2); Navigate(Calendar, Fade); If(SubmitForm(Form2), Notify("Event is updated!", NotificationType.Success))
+            //Patch(Events,Defaults(Events),{Name:Name.Value})
+        PressedBorderColor: =ColorFade(RGBA(0,143,112, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(0,143,112, 1), -30%)
+        Size: =15
+        Text: ="Save"
+        X: =626
+        Y: =659
+        ZIndex: =5
 

@@ -15,13 +15,13 @@ Profile_1 As screen:
         Height: =66
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
+        HoverFill: =ColorFade(RGBA(199,237,229, 1), -10%)
         OnSelect: |
             =SubmitForm(Form4_1);
             If(SubmitForm(Form4_1), Notify("Record is Saved", NotificationType.Success));
-        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        PressedBorderColor: =ColorFade(RGBA(0,143,112, 1), -30%)
         PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =ColorFade(RGBA(0,143,112, 1), -30%)
         Size: =17
         Text: ="Save"
         Width: =121
@@ -108,12 +108,14 @@ Profile_1 As screen:
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+                HoverBorderColor: =RGBA(0, 143, 112, 1)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                PressedBorderColor: =RGBA(73, 130, 5, 1)
+                PressedBorderColor: |-
+                    =
+                    RGBA(0, 143, 112, 1)
                 PressedColor: =RGBA(51, 51, 51, 1)
                 PressedFill: =RGBA(255, 255, 255, 1)
                 RadiusBottomLeft: =10
@@ -223,13 +225,13 @@ Profile_1 As screen:
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+                HoverBorderColor: =RGBA(0, 143, 112, 1)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
                 MaxLength: =Parent.MaxLength
                 OnChange: =
                 PaddingLeft: =5
-                PressedBorderColor: =RGBA(73, 130, 5, 1)
+                PressedBorderColor: =RGBA(0, 143, 112, 1)
                 PressedColor: =RGBA(51, 51, 51, 1)
                 PressedFill: =RGBA(255, 255, 255, 1)
                 RadiusBottomLeft: =10
@@ -299,11 +301,11 @@ Profile_1 As screen:
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+                HoverBorderColor: =RGBA(0, 143, 112, 1)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
                 OnChange: =
-                PressedBorderColor: =RGBA(73, 130, 5, 1)
+                PressedBorderColor: =RGBA(0, 143, 112, 1)
                 PressedColor: =RGBA(51, 51, 51, 1)
                 PressedFill: =RGBA(255, 255, 255, 1)
                 RadiusBottomLeft: =10

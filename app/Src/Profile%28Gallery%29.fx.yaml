@@ -80,7 +80,7 @@
             FocusedBorderThickness: =4
             Height: =60
             HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            HoverColor: =ColorFade(RGBA(199,237,229, 1), -10%)
             HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.ChevronRight
             OnSelect: =Select(Parent)
@@ -89,7 +89,9 @@
             PaddingRight: =10
             PaddingTop: =10
             PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            PressedColor: |-
+                =
+                ColorFade(RGBA(0,143,112, 1), -30%)
             PressedFill: =RGBA(0, 0, 0, 0)
             TabIndex: =0
             Tooltip: ="Показать сведения об элементе"
