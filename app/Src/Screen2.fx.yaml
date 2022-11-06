@@ -1,4 +1,5 @@
 Screen2 As screen:
+    Fill: =
     Height: =Max(App.Height, App.DesignHeight)
     OnVisible: |-
         =/*resets calendar view and date selection to today*/
@@ -103,7 +104,7 @@ Screen2 As screen:
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =90
+        TemplateSize: =99
         Visible: =_calendarVisible
         Width: =1255
         WrapCount: =7
@@ -163,7 +164,7 @@ Screen2 As screen:
             Height: =54
             Items: |
                 =//Filter('Events', 'Created On' = DateAdd(_firstDayInView,ThisItem.Value,Days))
-                Filter(Events, Text('Date', ShortDate) = Text(DateAdd(_firstDayInView, ThisItem.Value), ShortDate))
+                Filter(Events, Text(Date, ShortDate) = Text(DateAdd(_firstDayInView, ThisItem.Value), ShortDate))
             Layout: =Layout.Vertical
             TemplateSize: =19
             Width: =173
@@ -171,8 +172,9 @@ Screen2 As screen:
             ZIndex: =4
 
             Button7 As button:
+                Fill: =Switch(ThisItem.Type.Value, "Uzdevums", Green, "Lekcija", Yellow, "Termiņš", Red)
                 Height: =17
-                OnSelect: =Select(Parent)
+                OnSelect: =Set(varItem, ThisItem); Navigate('Event_details')
                 Size: =10
                 Text: =ThisItem.Name
                 Width: =163
@@ -183,7 +185,9 @@ Screen2 As screen:
         ZIndex: =6
 
     Button8 As button:
-        OnSelect: =Navigate(Create_new_event)
+        OnSelect: |-
+            =
+            Navigate(Create_new_event)
         Text: ="Add event"
         X: =1172
         Y: =36

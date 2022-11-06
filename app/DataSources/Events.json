@@ -29,6 +29,7 @@
       "craad_place": "Place",
       "craad_reminder": "Reminder",
       "craad_time": "time",
+      "craad_type": "Type",
       "createdby": "Created By",
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",
@@ -143,6 +144,27 @@
     },
     "OptionSetTypeKey": "StatusType",
     "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Events",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Tips",
+    "Name": "craad_tips",
+    "OptionSetInfoNameMapping": {
+      "1": "Lekcija",
+      "2": "Uzdevums",
+      "3": "Termiņš"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "craad_type",
+        "OptionSetReferenceEntityName": "Events"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "craad_type",
     "RelatedEntityName": "Events",
     "Type": "OptionSetInfo"
   }
