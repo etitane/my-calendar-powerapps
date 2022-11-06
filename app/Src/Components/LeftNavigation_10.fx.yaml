@@ -7,7 +7,7 @@ LeftNavigation_10 As CanvasComponent:
             {
                 Title: "Back",
                 Screen: Profile,
-                Icon: Icon.ArrowLeft
+                Icon: Icon.BackArrow
             },
             {
                 Title: "Profile",
@@ -19,7 +19,7 @@ LeftNavigation_10 As CanvasComponent:
                 Screen: Calendar,
                 Icon: Icon.CalendarBlank
             },
-             {
+            {
                 Title: "Logout",
                 Screen: Login,
                 Icon: Cancel
