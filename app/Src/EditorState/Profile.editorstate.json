@@ -5441,7 +5441,7 @@
         {
           "Category": "Data",
           "PropertyName": "NavItem",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
