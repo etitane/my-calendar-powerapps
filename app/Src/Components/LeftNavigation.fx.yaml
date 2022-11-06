@@ -11,7 +11,7 @@ LeftNavigation As CanvasComponent:
             },
             {
                 Title: "Calendar",
-                Screen: Screen2,
+                Screen: Calendar,
                 Icon: Icon.CalendarBlank
             },
              {

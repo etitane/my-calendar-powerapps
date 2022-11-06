@@ -6,7 +6,7 @@ Event_details As screen:
         Height: =582
         Item: =varItem
         NumberOfColumns: =1
-        OnSuccess: =Navigate(Screen2); ResetForm( Form1_2 )
+        OnSuccess: =Navigate(Calendar); ResetForm( Form1_2 )
         Width: =464
         X: =462
         Y: =100

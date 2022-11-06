@@ -111,10 +111,9 @@
   "ScreenOrder": [
     "Login",
     "Registration",
-    "Calendar",
     "Create_new_event",
     "Event_details",
-    "Screen2",
+    "Calendar",
     "Profile",
     "Profile_1",
     "Profile(Gallery)"

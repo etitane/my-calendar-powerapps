@@ -1,115 +1,195 @@
 Calendar As screen:
+    Fill: =
+    Height: =Max(App.Height, App.DesignHeight)
+    OnVisible: |-
+        =/*resets calendar view and date selection to today*/
+        Set(_calendarVisible, true);
+        Set(_dateSelected, Today());
+        Set(_firstDayOfMonth, DateAdd(Today(), 1 - Day(Today()), Days));
+        Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), Days));
+        Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, Months), -1, Days));
+        ClearCollect(colData, Filter(Events, 'Created On' >= _firstDayOfMonth && 'Created On' <= _lastDayOfMonth));
+    Width: =Max(App.Width, App.DesignWidth)
 
-    DataTable1 As dataTable.datatable:
-        BorderStyle: =BorderStyle.Solid
-        DisplayMode: =DisplayMode.Edit
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =500
-        Items: =Filter(Events,Lietotajs_username.Username=username1)
-        Width: =1027
-        X: =40
-        Y: =40
+    LblMonthSelected1_1 As label:
+        Align: =Align.Center
+        Height: =50
+        Size: =18
+        Text: =Text(_firstDayOfMonth, "mmmm yyyy")
+        Visible: =_calendarVisible
+        Width: =419
+        Wrap: =false
+        X: =509
+        Y: =91
         ZIndex: =1
 
-        Name_Column1 As dataTableColumn.textualColumn:
-            AutoWidth: =false
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Name"
-            FieldName: ="craad_name"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =1
-            Text: =ThisItem.Name
-            Width: =141
-            X: =28
-            Y: =0
-            ZIndex: =1
-
-        Details_Column1 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Details"
-            FieldName: ="craad_details"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =3
-            Text: =ThisItem.Details
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =3
-
-        event_type_Column1 As dataTableColumn.complexOptionSetColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="event_type"
-            FieldName: ="craad_event_type"
-            FieldVariantName: ="complexOptionSetColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =4
-            Text: =ThisItem.event_type
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =4
-
-        Lietotajs_Column1 As dataTableColumn.complexTypeColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Lietotajs"
-            FieldName: ="craad_Lietotajs"
-            FieldVariantName: ="complexTypeColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =5
-            Text: =ThisItem.Lietotajs_username.LietotajsId
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =5
-
-        Place_Column1 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Place"
-            FieldName: ="craad_place"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =6
-            Text: =ThisItem.Place
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =6
-
-        Date_Column1 As dataTableColumn.dateTimeColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Date"
-            FieldName: ="craad_date"
-            FieldVariantName: ="dateTimeColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =7
-            Text: =Text(ThisItem.Date,DateTimeFormat.LongDateTime)
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =7
-
-    Button4 As button:
-        OnSelect: =Navigate(Login,ScreenTransition.Fade);Exit(true);
-        Text: ="Logout"
-        X: =1102
-        Y: =40
+    iconPrevMonth1_1 As icon.ChevronLeft:
+        Height: =50
+        Icon: =Icon.ChevronLeft
+        OnSelect: |-
+            =/*changes month view to previous month*/
+            Set(_firstDayOfMonth, DateAdd(_firstDayOfMonth, -1, Months));
+            Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), Days));
+            Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, Months), -1, Days));
+            /*collects calendar events for all days in current month view. Updates _minDate to prevent duplicate data collection if user returns to this month view*/
+            If(_minDate > _firstDayOfMonth, Set(_minDate, _firstDayOfMonth);)
+        PaddingBottom: =7
+        PaddingLeft: =7
+        PaddingRight: =7
+        PaddingTop: =7
+        TabIndex: =0
+        Tooltip: ="View previous month"
+        Visible: =_calendarVisible
+        Width: =59
+        X: =509
+        Y: =91
         ZIndex: =2
 
-    Button5 As button:
-        Text: ="Button"
-        X: =768
-        Y: =232
+    iconNextMonth1_1 As icon.ChevronRight:
+        Height: =50
+        Icon: =Icon.ChevronRight
+        OnSelect: |-
+            =/*changes month view to next month*/
+            Set(_firstDayOfMonth, DateAdd(_firstDayOfMonth, 1, Months));
+            Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), Days));
+            /*collects calendar events for all days in current month view. Updates _maxDate to prevent duplicate data collection if user returns to this month view*/
+            Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, Months), -1, Days));
+            If(_lastDayOfMonth > _maxDate, Set(_maxDate, _lastDayOfMonth); )
+        PaddingBottom: =7
+        PaddingLeft: =7
+        PaddingRight: =7
+        PaddingTop: =7
+        TabIndex: =0
+        Tooltip: ="View next month"
+        Visible: =_calendarVisible
+        Width: =59
+        X: =869
+        Y: =91
         ZIndex: =3
 
-    LeftNavigation_5 As LeftNavigation:
-        Width: =LeftNavigation_5.MenuWidth
+    WeekdayGallery1_1 As gallery.WeekdayGallery:
+        AccessibleLabel: ="Days of the week"
+        Height: =33
+        Items: =Calendar.WeekdaysShort()
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =178
+        Visible: =_calendarVisible
+        Width: =1255
+        X: =91
+        Y: =175
         ZIndex: =4
+
+        Title1_1 As label:
+            Align: =Align.Center
+            Color: =RGBA(0, 18, 107, 1)
+            Height: =WeekdayGallery1_1.TemplateHeight
+            OnSelect: =Select(Parent)
+            Size: |+
+                =30
+                
+            Text: =ThisItem.Value
+            VerticalAlign: =Middle
+            Width: =WeekdayGallery1_1.TemplateWidth
+            Wrap: =false
+            X: =WeekdayGallery1_1.TemplateWidth / 2 - Self.Width / 2
+            Y: =WeekdayGallery1_1.TemplateHeight / 2 - Self.Height / 2
+            ZIndex: =1
+
+    MonthDayGallery1_1 As gallery.MonthDayGallery:
+        AccessibleLabel: ="Days of selected month"
+        BorderThickness: =1
+        Height: =515
+        Items: =[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19, 20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41]
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =99
+        Visible: =_calendarVisible
+        Width: =1255
+        WrapCount: =7
+        X: =91
+        Y: =222
+        ZIndex: =5
+
+        Circle1_1 As circle:
+            Height: =Self.Width
+            OnSelect: =Select(Parent)
+            Visible: |-
+                =/*Visible if calendar events are found on this day*/               
+                //CountRows(Filter(MyCalendarEvents, DateValue(Text(Start)) = DateAdd(_firstDayInView,ThisItem.Value,Days))) > 0 && !Subcircle1_1.Visible && Title2_1.Visible
+                !IsBlank(LookUp(Events, 'Created On' = DateAdd(_firstDayInView,ThisItem.Value,Days)).Name)
+            Width: =6.5
+            X: =84
+            Y: =67
+            ZIndex: =1
+
+        Subcircle1_1 As circle:
+            Height: =3 * Title2_1.Size
+            OnSelect: =Select(Parent)
+            Visible: =And(DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, Title2_1.Visible)
+            Width: =Self.Height
+            X: =65
+            ZIndex: =2
+
+        Title2_1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =If(DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, RGBA(255, 255, 255, 1), DateAdd(_firstDayInView, ThisItem.Value) = Today(), RGBA(47, 41, 43, 1), LblMonthSelected1_1.Color)
+            Fill: |-
+                =/*Fill value changes if the gallery item day = today, or if it lies outside of the current month*/             
+                If(
+                    /*Date selected is today*/
+                    DateAdd(_firstDayInView, ThisItem.Value) = Today() && DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, RGBA(0,0,0,0),
+                    /*Today when it is not selected*/
+                    DateAdd(_firstDayInView, ThisItem.Value) = Today(), ColorFade(Subcircle1_1.Fill, 0.67), 
+                    /*The day is outside the range of the currently selected month*/
+                    Abs(Self.Text - ThisItem.Value) > 10,RGBA(200, 200, 200, 0.3), RGBA(0, 0, 0, 0))
+            FocusedBorderColor: =Self.Color
+            FocusedBorderThickness: =2
+            Height: =36
+            OnSelect: =Set(_dateSelected, DateAdd(_firstDayInView, ThisItem.Value, Days))
+            Size: =14
+            TabIndex: =0
+            Text: =Day(DateAdd(_firstDayInView,ThisItem.Value,Days))
+            VerticalAlign: =Middle
+            Visible: |-
+                =/*This item is in a row containing no days of the visible month. It is in the row after the row where the last day of the month occurs*/ 
+                 !(DateAdd(_firstDayInView,ThisItem.Value,Days) - Weekday(DateAdd(_firstDayInView,ThisItem.Value,Days)) + 1 > _lastDayOfMonth)
+            Width: =172
+            Wrap: =false
+            ZIndex: =3
+
+        Gallery4 As gallery.galleryVertical:
+            Height: =54
+            Items: |
+                =//Filter('Events', 'Created On' = DateAdd(_firstDayInView,ThisItem.Value,Days))
+                Filter(Events, Text(Date, ShortDate) = Text(DateAdd(_firstDayInView, ThisItem.Value), ShortDate))
+            Layout: =Layout.Vertical
+            TemplateSize: =19
+            Width: =173
+            Y: =36
+            ZIndex: =4
+
+            Button7 As button:
+                Fill: =Switch(ThisItem.event_type.Value, "Uzdevums", Green, "Lekcijas", Yellow, "Praktiskais darbs", Red)
+                Height: =17
+                OnSelect: =Set(varItem, ThisItem); Navigate(Event_details)
+                Size: =10
+                Text: =ThisItem.Name
+                Width: =163
+                ZIndex: =1
+
+    LeftNavigation_1 As LeftNavigation:
+        Width: =LeftNavigation_1.MenuWidth
+        ZIndex: =6
+
+    Button8 As button:
+        OnSelect: |-
+            =
+            Navigate(Create_new_event)
+        Text: ="Add event"
+        X: =1172
+        Y: =36
+        ZIndex: =7
 
