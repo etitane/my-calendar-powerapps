@@ -13,11 +13,12 @@ Profile_1 As screen:
         Fill: =RGBA(50, 86, 160, 1)
         FontWeight: =FontWeight.Bold
         Height: =66
-        OnSelect: |-
+        OnSelect: |
             =SubmitForm(Form4_1);
             //Patch(Lietotajs,Defaults(Lietotajs),{Name:Name.Value});
-            If(TextInput3_1 <> DataCardValue26_1,Notify("Repeated password is not correct", NotificationType.Warning));
-            If(SubmitForm(Form4_1) && TextInput3_1 = DataCardValue26_1, Notify("The record is saved!", NotificationType.Success));
+            If(TextInput3_1 <> DataCardValue26_1,Notify("Repeated password is not correct",
+            NotificationType.Warning),SubmitForm(Form4_1) && TextInput3_1 = DataCardValue26_1,
+            Notify("The record is saved!", NotificationType.Success));
         Size: =17
         Text: ="Save"
         Width: =121
