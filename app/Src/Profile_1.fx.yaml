@@ -186,6 +186,7 @@ Profile_1 As screen:
             TextInput3_1 As text:
                 BorderColor: =RGBA(39, 67, 125, 1)
                 Default: ="Text input"
+                Format: =TextFormat.Number
                 OnChange: =
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
