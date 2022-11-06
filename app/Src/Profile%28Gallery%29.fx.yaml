@@ -4,6 +4,7 @@
     "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         Items: =Filter(Lietotajs, 'Lietotajs (Views)'.'Active Lietotajs')
         Layout: =Layout.Vertical
+        OnSelect: =SortByColumns(Lietotajs,"createdon")
         TemplatePadding: =0
         TemplateSize: =Min(104, Self.Height - 60)
         X: =238
