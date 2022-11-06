@@ -33,9 +33,9 @@ Profile As screen:
         Height: =450
         Item: =Gallery3.Selected
         NumberOfColumns: =1
-        Width: =752
-        X: =343
-        Y: =154
+        Width: =851
+        X: =258
+        Y: =151
         ZIndex: =9
 
         "'First name_DataCard7' As typedDataCard.textualEditCard":
@@ -49,7 +49,7 @@ Profile As screen:
             MaxLength: =DataSourceInfo([@Lietotajs], DataSourceInfo.MaxLength, "craad_firstname")
             Required: =true
             Update: =DataCardValue23.Text
-            Width: =749
+            Width: =848
             X: =0
             Y: =0
             ZIndex: =1
@@ -119,7 +119,7 @@ Profile As screen:
             MaxLength: =DataSourceInfo([@Lietotajs], DataSourceInfo.MaxLength, "craad_surname")
             Required: =true
             Update: =DataCardValue14.Text
-            Width: =749
+            Width: =848
             X: =0
             Y: =1
             ZIndex: =1
@@ -189,7 +189,7 @@ Profile As screen:
             MaxLength: =DataSourceInfo([@Lietotajs], DataSourceInfo.MaxLength, "craad_e_mail")
             Required: =true
             Update: =DataCardValue15.Text
-            Width: =749
+            Width: =848
             X: =0
             Y: =2
             ZIndex: =1
@@ -219,7 +219,7 @@ Profile As screen:
                 Size: =15
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.6
-                X: =305
+                X: =345
                 Y: =26
                 ZIndex: =2
 
@@ -256,7 +256,7 @@ Profile As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =749
+            Width: =848
             X: =0
             Y: =3
             ZIndex: =1
@@ -296,27 +296,19 @@ Profile As screen:
         Y: =34
         ZIndex: =10
 
-    LeftNavigation_4 As LeftNavigation_3:
-        NavItem: |-
-            =Table(
-                {
-                    Title: "Go Back",
-                    Screen: Profile,
-                    Icon: Icon.ArrowLeft
-                },
-                 {
-                    Title: "Edit",
-                    Screen: Profile_1,
-                    Icon: Icon.Edit
-                }
-            )
-        Width: =LeftNavigation_4.MenuWidth
-        ZIndex: =11
+    LeftNavigation_6 As LeftNavigation_5:
+        Width: =LeftNavigation_6.MenuWidth
+        ZIndex: =13
 
-    Button9 As button:
-        OnSelect: =Navigate(Profile_1, Fade);
-        Text: ="Rediģēt paroli"
-        X: =88
-        Y: =132
-        ZIndex: =12
+    LeftNavigation_7 As LeftNavigation_5:
+        Width: =LeftNavigation_7.MenuWidth
+        ZIndex: =14
+
+    LeftNavigation_3 As LeftNavigation:
+        Width: =LeftNavigation_3.MenuWidth
+        ZIndex: =15
+
+    LeftNavigation_9 As LeftNavigation_5:
+        Width: =LeftNavigation_9.MenuWidth
+        ZIndex: =16
 

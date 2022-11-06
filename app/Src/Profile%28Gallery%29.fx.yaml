@@ -91,20 +91,3 @@
         Y: =34
         ZIndex: =10
 
-    LeftNavigation_6 As LeftNavigation_3:
-        NavItem: |-
-            =Table(
-                {
-                    Title: "Profile",
-                    Screen: 'Profile(Gallery)',
-                    Icon: Icon.Person
-                },
-                 {
-                    Title: "Logout",
-                    Screen: Login,
-                    Icon: Cancel
-                }
-            )
-        Width: =LeftNavigation_6.MenuWidth
-        ZIndex: =11
-
