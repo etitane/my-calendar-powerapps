@@ -3,7 +3,7 @@
 
     "Gallery3 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Height: =682
-        Items: =Sort(Lietotajs,'Created On',Ascending)
+        Items: =Sort(Lietotajs,'Created On',Descending)
         Layout: =Layout.Vertical
         OnSelect: =SortOrder(ThisItem.'Created On')
         TemplatePadding: =0
