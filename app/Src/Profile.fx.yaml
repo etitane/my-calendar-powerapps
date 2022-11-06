@@ -14,8 +14,9 @@ Profile As screen:
         FontWeight: =FontWeight.Bold
         Height: =58
         OnSelect: |-
-            =SubmitForm(Form3)
-            //Patch(Lietotajs,Defaults(Lietotajs),{Name:Name.Value}) & Notify("The record is saved!");
+            =SubmitForm(Form3);
+            //Patch(Lietotajs,Defaults(Lietotajs),{Name:Name.Value})
+            If(SubmitForm(Form3), Notify("The record is saved!", NotificationType.Success))
         Size: =17
         Text: ="Saglabāt "
         Width: =135

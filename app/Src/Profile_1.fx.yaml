@@ -14,9 +14,10 @@ Profile_1 As screen:
         FontWeight: =FontWeight.Bold
         Height: =66
         OnSelect: |-
-            =SubmitForm(Form4_1)
+            =SubmitForm(Form4_1);
             //Patch(Lietotajs,Defaults(Lietotajs),{Name:Name.Value});
-            If(TextInput3_1 <>DataCardValue26_1, )
+            If(TextInput3_1 <> DataCardValue26_1,Notify("Repeated password is not correct", NotificationType.Warning));
+            If(SubmitForm(Form4_1) && TextInput3_1 = DataCardValue26_1, Notify("The record is saved!", NotificationType.Success));
         Size: =17
         Text: ="Save"
         Width: =121
@@ -187,7 +188,7 @@ Profile_1 As screen:
             TextInput3_1 As text:
                 BorderColor: =RGBA(39, 67, 125, 1)
                 Default: ="Text input"
-                OnChange: =Value(ThisItem.Password);
+                OnChange: =
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
