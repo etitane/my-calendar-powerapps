@@ -10,6 +10,24 @@ Event_details As screen:
         ZIndex: =2
 
     LeftNavigation_8 As LeftNavigation:
+        NavItem: |-
+            =Table(
+                {
+                    Title: "Profile",
+                    Screen: Profile,
+                    Icon: Icon.Person
+                },
+            {
+                    Title:"Calendar",
+                    Screen:Calendar,
+                    Icon:Icon.CalendarBlank
+                },
+                 {
+                    Title: "Logout",
+                    Screen: Login,
+                    Icon: Cancel
+                }
+            )
         Width: =LeftNavigation_8.MenuWidth
         ZIndex: =3
 
