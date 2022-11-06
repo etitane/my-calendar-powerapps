@@ -8730,7 +8730,7 @@
         {
           "Category": "Data",
           "PropertyName": "NavItem",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",

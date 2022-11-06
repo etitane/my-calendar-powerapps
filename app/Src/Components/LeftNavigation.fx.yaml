@@ -9,11 +9,7 @@ LeftNavigation As CanvasComponent:
                 Screen: Profile,
                 Icon: Icon.Person
             },
-            {
-                Title: "Calendar",
-                Screen: Calendar,
-                Icon: Icon.CalendarBlank
-            },
+        
              {
                 Title: "Logout",
                 Screen: Login,
