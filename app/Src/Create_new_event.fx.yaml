@@ -10,8 +10,8 @@ Create_new_event As screen:
 
     Label1_1 As label:
         Text: ="Jauns notikums"
-        X: =106
-        Y: =38
+        X: =206
+        Y: =24
         ZIndex: =3
 
     Form2_1 As form:

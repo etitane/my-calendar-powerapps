@@ -2,7 +2,7 @@ Event_details As screen:
 
     Button1_2 As button:
         OnSelect: |-
-            =SubmitForm(Form2)
+            =SubmitForm(Form2); Navigate(Calendar, Fade)
             //Patch(Events,Defaults(Events),{Name:Name.Value})
         Text: ="Save"
         X: =632
