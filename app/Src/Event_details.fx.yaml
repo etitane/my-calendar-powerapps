@@ -480,15 +480,17 @@ Event_details As screen:
 
     LeftNavigation_8 As LeftNavigation:
         Width: =LeftNavigation_8.MenuWidth
-        ZIndex: =4
+        ZIndex: =3
 
     Form2 As form:
         DataSource: =Events
         Height: =620
+        Item: =varItem
+        NumberOfColumns: =1
         Width: =584
         X: =627
         Y: =19
-        ZIndex: =5
+        ZIndex: =4
 
         Details_DataCard2 As typedDataCard.textualMultiLineEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -500,7 +502,7 @@ Event_details As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue17.Text
-            Width: =582
+            Width: =584
             X: =0
             Y: =1
             ZIndex: =1
@@ -568,7 +570,7 @@ Event_details As screen:
             Height: =138
             Required: =true
             Update: =DateValue2.SelectedDate + Time(Value(HourValue2.Selected.Value), Value(MinuteValue2.Selected.Value), 0)
-            Width: =582
+            Width: =584
             X: =0
             Y: =2
             ZIndex: =1
@@ -682,7 +684,7 @@ Event_details As screen:
             MaxLength: =DataSourceInfo([@Events], DataSourceInfo.MaxLength, "craad_place")
             Required: =false
             Update: =DataCardValue19.Text
-            Width: =582
+            Width: =584
             X: =0
             Y: =3
             ZIndex: =1
@@ -749,7 +751,7 @@ Event_details As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue20.Selected.Value
-            Width: =194
+            Width: =584
             X: =0
             Y: =4
             ZIndex: =1
@@ -817,9 +819,9 @@ Event_details As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue18.Selected.Value
-            Width: =194
-            X: =1
-            Y: =4
+            Width: =584
+            X: =0
+            Y: =5
             ZIndex: =1
 
             DataCardKey20 As label:
@@ -885,9 +887,9 @@ Event_details As screen:
             Height: =50
             Required: =false
             Update: =Value(DataCardValue21.Text)
-            Width: =194
-            X: =2
-            Y: =4
+            Width: =584
+            X: =0
+            Y: =6
             ZIndex: =1
 
             DataCardKey23 As label:
@@ -953,7 +955,7 @@ Event_details As screen:
             MaxLength: =DataSourceInfo([@Events], DataSourceInfo.MaxLength, "craad_name")
             Required: =true
             Update: =DataCardValue13.Text
-            Width: =582
+            Width: =584
             X: =0
             Y: =0
             ZIndex: =6
