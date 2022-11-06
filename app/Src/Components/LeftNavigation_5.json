@@ -941,12 +941,12 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638033454634302135",
+    "LastModifiedTimestamp": "638033460718232151",
     "Name": "LeftNavigation_5",
     "Rules": [
       {
         "Category": "Data",
-        "InvariantScript": "If(varOpenMenu, Max(App.Width, App.DesignWidth)/12+40, 70)",
+        "InvariantScript": "If(varOpenMenu, Max(App.Width, App.DesignWidth)/12+60, 70)",
         "Property": "MenuWidth",
         "RuleProviderType": "System"
       },
@@ -1031,7 +1031,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638033454634302135",
+  "LastModifiedTimestamp": "638033460718232151",
   "Name": "00aaa59d040f4f6b8c62f0a41db68ee3",
   "OverridableProperties": {},
   "TemplateOriginalName": "f7c2e4baec1d40e0ba77a8fc625c59b1",
