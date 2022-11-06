@@ -1,7 +1,7 @@
 LeftNavigation_10 As CanvasComponent:
     Fill: =RGBA(244, 244, 244, 1)
     Height: =Max(App.Height, App.DesignHeight)
-    MenuWidth: =If(varOpenMenu, Max(App.Width, App.DesignWidth)/12+60, 70)
+    MenuWidth: =If(varOpenMenu, Max(App.Width, App.DesignWidth)/12+40, 70)
     NavItem: |-
         =Table(
             {
@@ -36,18 +36,39 @@ LeftNavigation_10 As CanvasComponent:
         Layout: =Layout.Vertical
         OnSelect: =Navigate(ThisItem.Screen, Fade)
         TemplatePadding: =0
-        TemplateSize: =71
-        Width: =70
+        TemplateSize: =59
+        Width: =173.83333333333331
         Y: =70
         ZIndex: =1
 
-        Icon7_2 As icon.Person:
-            Height: =51
+        Title5 As label:
+            Height: =31
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =12
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =73
+            X: =75
+            Y: =28
+            ZIndex: =1
+
+        NextArrow5 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
             Icon: =ThisItem.Icon
-            OnSelect: =Navigate(ThisItem.Screen, Fade)
-            Width: =54
-            X: =6
-            Y: =5
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =4
             ZIndex: =2
 
     Icon3_3 As icon.Hamburger:
