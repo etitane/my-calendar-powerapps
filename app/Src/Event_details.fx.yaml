@@ -39,7 +39,7 @@ Event_details As screen:
 
             DataCardValue8_1 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                Default: =varItem.Details
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =80
@@ -200,7 +200,7 @@ Event_details As screen:
         event_type_DataCard1_1 As typedDataCard.comboBoxOptionSetSingleEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="craad_event_type"
-            Default: =ThisItem.event_type
+            Default: =
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Events],DataSourceInfo.DisplayName,"craad_event_type")
             Fill: =RGBA(0, 0, 0, 0)
@@ -224,6 +224,7 @@ Event_details As screen:
 
             DataCardValue9_1 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =varItem.event_type.Value
                 DefaultSelectedItems: =[Parent.Default]
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
@@ -292,7 +293,7 @@ Event_details As screen:
 
             DataCardValue10_1 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                Default: =varItem.Place
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -469,7 +470,7 @@ Event_details As screen:
 
     Button1_2 As button:
         OnSelect: =SubmitForm(Form1_2)
-        Text: ="Izveidot"
+        Text: ="Save"
         X: =632
         Y: =664
         ZIndex: =2

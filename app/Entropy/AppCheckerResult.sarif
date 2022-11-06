@@ -104,7 +104,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 20,
+                  "charOffset": 26,
                   "snippet": {
                     "text": ".Value"
                   }
@@ -114,6 +114,46 @@
                 "member": "Fill",
                 "module": "Screen2",
                 "type": "Screen2.MonthDayGallery1_1.Gallery4.Button7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Value"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Event_details.Form1_2.event_type_DataCard1_1.DataCardValue9_1.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Event_details.Form1_2.event_type_DataCard1_1.DataCardValue9_1.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 18,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "Event_details",
+                "type": "Event_details.Form1_2.event_type_DataCard1_1.DataCardValue9_1"
               }
             }
           ],
