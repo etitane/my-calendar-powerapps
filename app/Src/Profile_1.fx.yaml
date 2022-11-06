@@ -19,8 +19,8 @@ Profile_1 As screen:
         Size: =17
         Text: ="Save"
         Width: =121
-        X: =1164
-        Y: =663
+        X: =632
+        Y: =661
         ZIndex: =8
 
     Label2_6 As label:
@@ -38,7 +38,7 @@ Profile_1 As screen:
         BorderThickness: =2
         DataSource: =Lietotajs
         Fill: =RGBA(241, 244, 249, 1)
-        Height: =373
+        Height: =340
         Item: =Gallery3.Selected
         NumberOfColumns: =1
         Width: =862

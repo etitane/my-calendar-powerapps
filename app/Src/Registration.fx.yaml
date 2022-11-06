@@ -353,7 +353,7 @@ Registration As screen:
 
     Button1 As button:
         OnSelect: =SubmitForm(Form1) && Navigate(Login)
-        Text: ="Reģistrēties"
+        Text: ="Sign Up"
         X: =570
         Y: =690
         ZIndex: =2

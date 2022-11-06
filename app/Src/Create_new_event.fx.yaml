@@ -3,7 +3,7 @@ Create_new_event As screen:
 
     Button1_1 As button:
         OnSelect: =SubmitForm(Form2_1); Navigate(Calendar)
-        Text: ="Izveidot"
+        Text: ="Create"
         X: =622
         Y: =674
         ZIndex: =2

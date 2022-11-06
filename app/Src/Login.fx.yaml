@@ -41,7 +41,7 @@ Login As screen:
 
     Button3 As button:
         OnSelect: =Navigate(Registration)
-        Text: ="Reģistrēties"
+        Text: ="Sign Up"
         X: =558
         Y: =482
         ZIndex: =6

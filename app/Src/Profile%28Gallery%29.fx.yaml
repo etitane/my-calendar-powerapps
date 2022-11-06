@@ -1,12 +1,5 @@
 "'Profile(Gallery)' As screen":
-
-    Label2_3 As label:
-        Color: =RGBA(39, 67, 125, 1)
-        Size: =17
-        Text: ="MyCalendar"
-        X: =88
-        Y: =34
-        ZIndex: =1
+    Fill: =
 
     "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         Items: =Filter(Lietotajs, 'Lietotajs (Views)'.'Active Lietotajs')
@@ -57,8 +50,8 @@
             TabIndex: =0
             Tooltip: ="View item details"
             Width: =60
-            X: =Parent.TemplateWidth - Self.Width - 5
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            X: =580
+            Y: =44
             ZIndex: =3
 
         Separator4 As rectangle:
@@ -67,27 +60,4 @@
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =4
-
-    Button6_1 As button:
-        Color: =White
-        Fill: =RGBA(50, 86, 160, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =66
-        OnSelect: =Save;Back();
-        Size: =17
-        Text: ="Saglabāt un atgriezties"
-        Width: =296
-        X: =991
-        Y: =663
-        ZIndex: =8
-
-    Label2_4 As label:
-        Color: =RGBA(39, 67, 125, 1)
-        DisabledBorderColor: =RGBA(0, 13, 75, 1)
-        FontWeight: =FontWeight.Semibold
-        Size: =30
-        Text: ="Profils"
-        X: =618
-        Y: =34
-        ZIndex: =10
 
