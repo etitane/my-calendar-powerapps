@@ -11,7 +11,7 @@ Event_details As screen:
 
     Form2 As form:
         DataSource: =Events
-        Height: =620
+        Height: =634
         Item: =varItem
         NumberOfColumns: =1
         Width: =584

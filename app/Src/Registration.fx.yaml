@@ -352,7 +352,7 @@ Registration As screen:
                 ZIndex: =4
 
     Button1 As button:
-        OnSelect: =SubmitForm(Form1) && Navigate(Login)
+        OnSelect: =SubmitForm(Form1) && Navigate(Login); If(SubmitForm(Form1), Notify("User is successfully created!", NotificationType.Success))
         Text: ="Sign Up"
         X: =570
         Y: =690
