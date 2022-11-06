@@ -13,7 +13,7 @@ Profile As screen:
         Fill: =RGBA(50, 86, 160, 1)
         FontWeight: =FontWeight.Bold
         Height: =66
-        OnSelect: =Save;Back();
+        OnSelect: =Save
         Size: =17
         Text: ="Saglabāt un atgriezties"
         Width: =296
@@ -55,6 +55,7 @@ Profile As screen:
             DataCardKey24 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =15
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -73,6 +74,7 @@ Profile As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =15
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey24.X + DataCardKey24.Width
@@ -123,6 +125,7 @@ Profile As screen:
             DataCardKey15 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =15
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -141,6 +144,7 @@ Profile As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =15
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey15.X + DataCardKey15.Width
@@ -191,6 +195,7 @@ Profile As screen:
             DataCardKey16 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =15
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -209,6 +214,7 @@ Profile As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =15
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.6
                 X: =244.14
@@ -256,6 +262,7 @@ Profile As screen:
             DataCardKey3 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =15
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -270,6 +277,7 @@ Profile As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =15
                 Text: =Parent.Default
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey3.X + DataCardKey3.Width

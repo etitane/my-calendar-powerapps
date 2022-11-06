@@ -174,7 +174,7 @@ Screen2 As screen:
             Button7 As button:
                 Fill: =Switch(ThisItem.event_type.Value, "Uzdevums", Green, "Lekcijas", Yellow, "Praktiskais darbs", Red)
                 Height: =17
-                OnSelect: =Set(varItem, ThisItem); Navigate('Event_details')
+                OnSelect: =Set(varItem, ThisItem); Navigate(Event_details)
                 Size: =10
                 Text: =ThisItem.Name
                 Width: =163
