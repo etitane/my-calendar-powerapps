@@ -7,8 +7,8 @@
         OnSelect: =SortByColumns(Lietotajs,"createdon")
         TemplatePadding: =0
         TemplateSize: =Min(104, Self.Height - 60)
-        X: =238
-        Y: =125
+        X: =236
+        Y: =76
         ZIndex: =1
 
         Title3 As label:
