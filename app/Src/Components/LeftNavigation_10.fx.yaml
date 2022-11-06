@@ -6,7 +6,7 @@ LeftNavigation_10 As CanvasComponent:
         =Table(
             {
                 Title: "Back",
-                Screen: Calendar,
+                Screen: Profile,
                 Icon: Icon.ArrowLeft
             },
             {
