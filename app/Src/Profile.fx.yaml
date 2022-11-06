@@ -13,7 +13,9 @@ Profile As screen:
         Fill: =RGBA(50, 86, 160, 1)
         FontWeight: =FontWeight.Bold
         Height: =58
-        OnSelect: =Save
+        OnSelect: |-
+            =SubmitForm(Form3)
+            //Patch(Lietotajs,Defaults(Lietotajs),{Name:Name.Value})
         Size: =17
         Text: ="Saglabāt "
         Width: =135

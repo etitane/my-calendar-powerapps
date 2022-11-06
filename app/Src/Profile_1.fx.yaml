@@ -13,7 +13,9 @@ Profile_1 As screen:
         Fill: =RGBA(50, 86, 160, 1)
         FontWeight: =FontWeight.Bold
         Height: =66
-        OnSelect: =Save;Back();
+        OnSelect: |-
+            =SubmitForm(Form4_1)
+            //Patch(Lietotajs,Defaults(Lietotajs),{Name:Name.Value});
         Size: =17
         Text: ="Saglabāt un atgriezties"
         Width: =296
