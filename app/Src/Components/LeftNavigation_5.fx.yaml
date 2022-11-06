@@ -38,7 +38,7 @@ LeftNavigation_5 As CanvasComponent:
 
         Title1 As label:
             Height: =26
-            OnSelect: =Select(Parent)
+            OnSelect: =ThisItem.Screen
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
