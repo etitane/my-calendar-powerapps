@@ -9,8 +9,8 @@ Login As screen:
         Fill: =RGBA(199, 237, 229, 1)
         FocusedBorderThickness: =4
         Height: =551
-        HoverFill: =RGBA(73, 130, 5, 1)
-        PressedFill: =RGBA(73, 130, 5, 1)
+        HoverFill: =RGBA(199, 237, 229, 1)
+        PressedFill: =RGBA(199, 237, 229, 1)
         TabIndex: =-10
         Width: =453
         X: =411
@@ -47,10 +47,11 @@ Login As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         HintText: ="Username"
-        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverBorderColor: |
+            =RGBA(0, 143, 112, 1)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
-        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedBorderColor: =RGBA(0, 143, 112, 1)
         PressedColor: =RGBA(51, 51, 51, 1)
         PressedFill: =RGBA(255, 255, 255, 1)
         RadiusBottomLeft: =10
@@ -73,11 +74,11 @@ Login As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         HintText: ="Password"
-        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverBorderColor: =RGBA(0, 143, 112, 1)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
         Mode: =TextMode.Password
-        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedBorderColor: =RGBA(0, 143, 112, 1)
         PressedColor: =RGBA(51, 51, 51, 1)
         PressedFill: =RGBA(255, 255, 255, 1)
         RadiusBottomLeft: =10
@@ -101,12 +102,13 @@ Login As screen:
         FontWeight: =FontWeight.Semibold
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
+        HoverFill: =ColorFade(RGBA(199,237,229, 1), -10%)
         OnSelect: |-
             =If(!IsBlank(LookUp(Lietotajs,Username=TextInput1.Text And Password=TextInput2.Text)),Navigate(Calendar,ScreenTransition.Cover,{username1: LookUp(Lietotajs,Username=TextInput1.Text)}),UpdateContext({ShowWrongCredentials: true }))
-        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        PressedBorderColor: |
+            =ColorFade(RGBA(0,143,112, 1), -30%)
         PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =ColorFade(RGBA(0,143,112, 1), -30%)
         Size: =15
         Text: ="Log In"
         X: =558
@@ -142,11 +144,11 @@ Login As screen:
         FontWeight: =FontWeight.Semibold
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
+        HoverFill: =ColorFade(RGBA(199,237,229, 1), -10%)
         OnSelect: =Navigate(Registration)
-        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        PressedBorderColor: =ColorFade(RGBA(0,143,112, 1), -30%)
         PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =ColorFade(RGBA(0,143,112, 1), -30%)
         Size: =15
         Text: ="Sign Up"
         X: =558

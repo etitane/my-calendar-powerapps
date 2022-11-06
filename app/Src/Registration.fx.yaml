@@ -63,12 +63,12 @@ Registration As screen:
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+                HoverBorderColor: =RGBA(0, 143, 112, 1)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                PressedBorderColor: =RGBA(73, 130, 5, 1)
+                PressedBorderColor: =RGBA(0, 143, 112, 1)
                 PressedColor: =RGBA(51, 51, 51, 1)
                 PressedFill: =RGBA(255, 255, 255, 1)
                 RadiusBottomLeft: =10
@@ -178,12 +178,12 @@ Registration As screen:
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+                HoverBorderColor: =RGBA(0, 143, 112, 1)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                PressedBorderColor: =RGBA(73, 130, 5, 1)
+                PressedBorderColor: =RGBA(0, 143, 112, 1)
                 PressedColor: =RGBA(51, 51, 51, 1)
                 PressedFill: =RGBA(255, 255, 255, 1)
                 RadiusBottomLeft: =10
@@ -294,12 +294,12 @@ Registration As screen:
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+                HoverBorderColor: =RGBA(0, 143, 112, 1)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                PressedBorderColor: =RGBA(73, 130, 5, 1)
+                PressedBorderColor: =RGBA(0, 143, 112, 1)
                 PressedColor: =RGBA(51, 51, 51, 1)
                 PressedFill: =RGBA(255, 255, 255, 1)
                 RadiusBottomLeft: =10
@@ -409,13 +409,13 @@ Registration As screen:
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+                HoverBorderColor: =RGBA(0, 143, 112, 1)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.Password
                 PaddingLeft: =5
-                PressedBorderColor: =RGBA(73, 130, 5, 1)
+                PressedBorderColor: =RGBA(0, 143, 112, 1)
                 PressedColor: =RGBA(51, 51, 51, 1)
                 PressedFill: =RGBA(255, 255, 255, 1)
                 RadiusBottomLeft: =10
@@ -525,12 +525,12 @@ Registration As screen:
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+                HoverBorderColor: =RGBA(0, 143, 112, 1)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                PressedBorderColor: =RGBA(73, 130, 5, 1)
+                PressedBorderColor: =RGBA(0, 143, 112, 1)
                 PressedColor: =RGBA(51, 51, 51, 1)
                 PressedFill: =RGBA(255, 255, 255, 1)
                 RadiusBottomLeft: =10
@@ -602,11 +602,15 @@ Registration As screen:
         FontWeight: =FontWeight.Semibold
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
+        HoverFill: =ColorFade(RGBA(199,237,229, 1), -10%)
         OnSelect: =SubmitForm(Form1) && Navigate(Login); If(SubmitForm(Form1), Notify("User is successfully created!", NotificationType.Success))
-        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        PressedBorderColor: |
+            =
+            ColorFade(RGBA(0,143,112, 1), -30%)
         PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: |
+            =
+            ColorFade(RGBA(0,143,112, 1), -30%)
         Size: =15
         Text: ="Sign Up"
         X: =570
@@ -639,7 +643,9 @@ Registration As screen:
         DisabledFill: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
         HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: |-
+            =
+            ColorFade(RGBA(199,237,229, 1), -10%)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(Login, Fade)

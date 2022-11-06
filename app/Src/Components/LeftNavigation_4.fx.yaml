@@ -51,7 +51,7 @@ LeftNavigation_4 As CanvasComponent:
 
         Icon7_1 As icon.Person:
             BorderColor: =RGBA(0, 18, 107, 1)
-            Color: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 143, 112, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =47
@@ -64,7 +64,7 @@ LeftNavigation_4 As CanvasComponent:
 
     Icon3_1 As icon.Hamburger:
         BorderColor: =RGBA(0, 18, 107, 1)
-        Color: =RGBA(0, 18, 107, 1)
+        Color: =RGBA(0, 143, 112, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =70

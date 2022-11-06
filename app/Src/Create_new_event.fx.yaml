@@ -1086,25 +1086,6 @@ Create_new_event As screen:
         Width: =LeftNavigation_12.MenuWidth
         ZIndex: =6
 
-    Label2_7 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(0, 143, 112, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(33, 191, 160, 0)
-        FocusedBorderThickness: =4
-        Font: =Font.'Great Vibes'
-        FontWeight: =FontWeight.Bold
-        Height: =60
-        Size: =25
-        Text: ="MyCalendar"
-        Width: =175
-        X: =819
-        Y: =613
-        ZIndex: =7
-
     Label2_9 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
