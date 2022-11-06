@@ -298,3 +298,10 @@ Profile As screen:
         Width: =LeftNavigation_4.MenuWidth
         ZIndex: =11
 
+    Button9 As button:
+        OnSelect: =Navigate(Profile_1, Fade);
+        Text: ="Rediģēt paroli"
+        X: =1152
+        Y: =54
+        ZIndex: =12
+

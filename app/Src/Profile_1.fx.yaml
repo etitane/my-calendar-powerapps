@@ -186,6 +186,7 @@ Profile_1 As screen:
             TextInput3_1 As text:
                 BorderColor: =RGBA(0, 13, 75, 1)
                 Default: ="Text input"
+                OnChange: =Value(ThisItem.Password);
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0

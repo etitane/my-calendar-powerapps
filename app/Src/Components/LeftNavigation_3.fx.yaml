@@ -63,20 +63,10 @@ LeftNavigation_3 As CanvasComponent:
         ZIndex: =3
 
     Icon2 As icon.Edit:
-        Height: =54
+        Height: =52
         Icon: =Icon.Edit
-        OnSelect: =Navigate(Profile_1, Fade),
-        Width: =61
+        Width: =57
         X: =6
-        Y: =141
+        Y: =128
         ZIndex: =4
-
-    Icon4 As icon.Key:
-        Height: =54
-        Icon: =Icon.Key
-        OnSelect: =Navigate(pr
-        Width: =61
-        X: =6
-        Y: =220
-        ZIndex: =5
 
