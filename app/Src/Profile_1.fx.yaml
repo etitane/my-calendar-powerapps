@@ -15,8 +15,8 @@ Profile_1 As screen:
         Height: =66
         OnSelect: |
             =SubmitForm(Form4_1);
-            
-            If(SubmitForm(Form4_1), Notify("The record is saved!", NotificationType.Success.0))
+            //Patch(Lietotajs,Defaults(Lietotajs),{Name:Name.Value});
+            If(SubmitForm(Form4_1), Notify("The record is saved!", NotificationType.Success))
         Size: =17
         Text: ="Save"
         Width: =121
