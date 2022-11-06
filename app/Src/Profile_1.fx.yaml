@@ -16,7 +16,7 @@ Profile_1 As screen:
         OnSelect: |-
             =SubmitForm(Form4_1);
             //Patch(Lietotajs,Defaults(Lietotajs),{Name:Name.Value});
-            If(TextInput3_1 <> DataCardValue26_1,Notify("Repeated password is not correct",NotificationType.Warning);
+            If(TextInput3_1 <> DataCardValue26_1,Notify("Repeated password is not correct",NotificationType.Warning));
         Size: =17
         Text: ="Save"
         Width: =121
