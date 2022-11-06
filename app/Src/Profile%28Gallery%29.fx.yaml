@@ -1,45 +1,60 @@
 "'Profile(Gallery)' As screen":
     Fill: =
 
-    "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-        Items: =Filter(Lietotajs, 'Lietotajs (Views)'.'Active Lietotajs')
+    "Gallery3 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+        Height: =682
+        Items: =Sort(Lietotajs,'Created On',Ascending)
         Layout: =Layout.Vertical
-        OnSelect: =SortByColumns(Lietotajs,"createdon")
+        OnSelect: =SortOrder(ThisItem.'Created On')
         TemplatePadding: =0
-        TemplateSize: =Min(104, Self.Height - 60)
+        TemplateSize: =Min(168, Self.Height - 60)
         X: =236
-        Y: =76
+        Y: =36
         ZIndex: =1
 
-        Title3 As label:
+        Title2 As label:
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.'First name'
+            Text: =ThisItem.Username
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
             Y: =16
             ZIndex: =1
 
-        Subtitle3 As label:
+        Subtitle1 As label:
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.Surname
+            Text: =ThisItem.'Created On'
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
-            Y: =Title3.Y + Title3.Height + 4
+            Y: =Title2.Y + Title2.Height + 2
             ZIndex: =2
 
-        NextArrow3 As icon.ChevronRight:
+        Body1 As label:
+            Height: =Self.Size * 4
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.e_mail
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =Subtitle1.Y + Subtitle1.Height + 4
+            ZIndex: =3
+
+        NextArrow2 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             Height: =60
             Icon: =Icon.ChevronRight
@@ -49,16 +64,16 @@
             PaddingRight: =10
             PaddingTop: =10
             TabIndex: =0
-            Tooltip: ="View item details"
+            Tooltip: ="Показать сведения об элементе"
             Width: =60
-            X: =580
-            Y: =44
-            ZIndex: =3
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
 
-        Separator4 As rectangle:
+        Separator1 As rectangle:
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
-            ZIndex: =4
+            ZIndex: =5
 
