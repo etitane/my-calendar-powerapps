@@ -1,0 +1,67 @@
+LeftNavigation_4 As CanvasComponent:
+    Fill: =RGBA(244, 244, 244, 1)
+    Height: =Max(App.Height, App.DesignHeight)
+    MenuWidth: =If(varOpenMenu, Max(App.Width, App.DesignWidth)/12+40, 70)
+    NavItem: |-
+        =Table(
+            {
+                Title: "Profile",
+                Screen: Profile,
+                Icon: Icon.Person
+            },
+        { Title: "Calendar", Screen: Calendar, Icon: CalendarBlank
+        },
+             {
+                Title: "Logout",
+                Screen: Login,
+                Icon: Cancel
+            }
+        )
+    Width: =LeftNavigation_4.MenuWidth
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    "Gallery2_1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        Height: =692
+        Items: =LeftNavigation_4.NavItem
+        Layout: =Layout.Vertical
+        OnSelect: =Navigate(ThisItem.Screen, Fade)
+        TemplatePadding: =0
+        TemplateSize: =71
+        Width: =153.8333333333
+        Y: =67
+        ZIndex: =1
+
+        Title6_1 As label:
+            Height: =28
+            OnSelect: =Navigate(ThisItem.Screen, Fade)
+            PaddingLeft: =6
+            Size: =13
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =88.8333333333
+            X: =65
+            Y: =24
+            ZIndex: =1
+
+        Icon7_1 As icon.Person:
+            Height: =47
+            Icon: =ThisItem.Icon
+            OnSelect: =Navigate(ThisItem.Screen, Fade)
+            Width: =45
+            X: =6
+            Y: =5
+            ZIndex: =2
+
+    Icon3_1 As icon.Hamburger:
+        Height: =70
+        Icon: =Icon.Hamburger
+        OnSelect: =Set(varOpenMenu, !varOpenMenu)
+        PaddingBottom: =15
+        PaddingLeft: =15
+        PaddingRight: =15
+        PaddingTop: =15
+        Width: =70
+        ZIndex: =2
+
