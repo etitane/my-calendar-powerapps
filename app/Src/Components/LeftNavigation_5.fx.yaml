@@ -15,11 +15,6 @@ LeftNavigation_5 As CanvasComponent:
                 Icon: Icon.Edit
             },
             {
-                Title: "Calendar",
-                Screen: Calendar,
-                Icon: Icon.CalendarBlank
-            },
-            {
                 Title: "Logout",
                 Screen: Login,
                 Icon: Cancel

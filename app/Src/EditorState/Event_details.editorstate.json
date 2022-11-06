@@ -7469,11 +7469,18 @@
         "X",
         "Y",
         "ZIndex",
-        "MenuWidth",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "Table(\r\n    {\r\n        Title: \"Profile\",\r\n        Screen: Profile,\r\n        Icon: Icon.Person\r\n    },\r\n\r\n     {\r\n        Title: \"Logout\",\r\n        Screen: Login,\r\n        Icon: Cancel\r\n    }\r\n)",
+          "AutoRuleBindingString": "100",
+          "InvariantPropertyName": "MenuWidth",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Table(\r\n    {\r\n        Title: \"Profile\",\r\n        Screen: Profile,\r\n        Icon: Icon.Person\r\n    },\r\n{ Title: \"Calendar\", Screen: Calendar\r\n},\r\n     {\r\n        Title: \"Logout\",\r\n        Screen: Login,\r\n        Icon: Cancel\r\n    }\r\n)",
           "InvariantPropertyName": "NavItem",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -7505,7 +7512,7 @@
         {
           "Category": "Data",
           "PropertyName": "NavItem",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
@@ -7515,12 +7522,12 @@
         {
           "Category": "Design",
           "PropertyName": "Y",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
           "PropertyName": "X",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",

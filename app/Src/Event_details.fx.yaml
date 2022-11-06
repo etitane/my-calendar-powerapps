@@ -9,28 +9,6 @@ Event_details As screen:
         Y: =680
         ZIndex: =2
 
-    LeftNavigation_8 As LeftNavigation:
-        NavItem: |-
-            =Table(
-                {
-                    Title: "Profile",
-                    Screen: Profile,
-                    Icon: Icon.Person
-                },
-            {
-                    Title:"Calendar",
-                    Screen:Calendar,
-                    Icon:Icon.CalendarBlank
-                },
-                 {
-                    Title: "Logout",
-                    Screen: Login,
-                    Icon: Cancel
-                }
-            )
-        Width: =LeftNavigation_8.MenuWidth
-        ZIndex: =3
-
     Form2 As form:
         DataSource: =Events
         Height: =620
@@ -560,4 +538,8 @@ Event_details As screen:
                 Wrap: =false
                 Y: =DataCardKey14.Y
                 ZIndex: =4
+
+    LeftNavigation_8 As LeftNavigation_4:
+        Width: =LeftNavigation_8.MenuWidth
+        ZIndex: =5
 

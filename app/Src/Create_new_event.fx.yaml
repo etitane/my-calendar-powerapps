@@ -14,28 +14,6 @@ Create_new_event As screen:
         Y: =38
         ZIndex: =3
 
-    LeftNavigation_2 As LeftNavigation:
-        NavItem: |-
-            =Table(
-                {
-                    Title: "Profile",
-                    Screen: Profile,
-                    Icon: Icon.Person
-                },
-                {
-                    Title:"Calendar",
-                    Screen:Calendar,
-                    Icon:Icon.CalendarBlank
-                },
-                 {
-                    Title: "Logout",
-                    Screen: Login,
-                    Icon: Cancel
-                }
-            )
-        Width: =LeftNavigation_2.MenuWidth
-        ZIndex: =4
-
     Form2_1 As form:
         DataSource: =Events
         DefaultMode: =FormMode.New
@@ -634,4 +612,8 @@ Create_new_event As screen:
                 Wrap: =false
                 Y: =DataCardKey14_1.Y
                 ZIndex: =4
+
+    LeftNavigation_12 As LeftNavigation_4:
+        Width: =LeftNavigation_12.MenuWidth
+        ZIndex: =6
 
