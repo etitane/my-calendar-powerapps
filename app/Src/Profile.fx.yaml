@@ -15,7 +15,7 @@ Profile As screen:
         Height: =58
         OnSelect: |-
             =SubmitForm(Form3)
-            //Patch(Lietotajs,Defaults(Lietotajs),{Name:Name.Value})
+            //Patch(Lietotajs,Defaults(Lietotajs),{Name:Name.Value}) & Notify("The record is saved!");
         Size: =17
         Text: ="Saglabāt "
         Width: =135
