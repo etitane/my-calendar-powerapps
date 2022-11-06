@@ -2,12 +2,13 @@
     Fill: =
 
     "Gallery3 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
-        Height: =682
+        Height: =698
         Items: =Sort(Lietotajs,'Created On',Descending)
         Layout: =Layout.Vertical
         OnSelect: =SortOrder(ThisItem.'Created On')
         TemplatePadding: =0
         TemplateSize: =Min(168, Self.Height - 60)
+        Width: =780
         X: =236
         Y: =36
         ZIndex: =1
