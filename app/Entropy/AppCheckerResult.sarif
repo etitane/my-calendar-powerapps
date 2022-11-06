@@ -14,6 +14,46 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "LeftNavigation_3.Icon2.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LeftNavigation_3.Icon2.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 9,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "Profile_1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "LeftNavigation_3",
+                "type": "LeftNavigation_3.Icon2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Profile_1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Event_details.Form1_2.event_type_DataCard1_1.DataCardValue9_1.Default"
                 }
               ],

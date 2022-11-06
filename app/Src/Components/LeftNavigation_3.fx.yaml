@@ -65,6 +65,7 @@ LeftNavigation_3 As CanvasComponent:
     Icon2 As icon.Edit:
         Height: =52
         Icon: =Icon.Edit
+        OnSelect: =Navigate(Profile_1, Fade)
         Width: =57
         X: =6
         Y: =128
