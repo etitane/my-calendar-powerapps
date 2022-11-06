@@ -48,11 +48,11 @@ LeftNavigation_5 As CanvasComponent:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =12
+            Size: =11
             Text: =ThisItem.Title
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
-            X: =74
+            X: =72
             Y: =18
             ZIndex: =1
 
@@ -68,7 +68,6 @@ LeftNavigation_5 As CanvasComponent:
             TabIndex: =0
             Tooltip: ="View item details"
             Width: =60
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =2
 
     Icon3_2 As icon.Hamburger:
