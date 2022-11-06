@@ -499,7 +499,7 @@ Event_details As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Events],DataSourceInfo.DisplayName,"craad_details")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =116
             Required: =false
             Update: =DataCardValue17.Text
             Width: =584
@@ -567,7 +567,7 @@ Event_details As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Events],DataSourceInfo.DisplayName,"craad_date")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =138
+            Height: =86
             Required: =true
             Update: =DateValue2.SelectedDate + Time(Value(HourValue2.Selected.Value), Value(MinuteValue2.Selected.Value), 0)
             Width: =584
@@ -680,7 +680,7 @@ Event_details As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Events],DataSourceInfo.DisplayName,"craad_place")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =76
             MaxLength: =DataSourceInfo([@Events], DataSourceInfo.MaxLength, "craad_place")
             Required: =false
             Update: =DataCardValue19.Text
@@ -748,7 +748,7 @@ Event_details As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Events],DataSourceInfo.DisplayName,"craad_reminder")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =84
             Required: =false
             Update: =DataCardValue20.Selected.Value
             Width: =584
@@ -951,7 +951,7 @@ Event_details As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Events],DataSourceInfo.DisplayName,"craad_name")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =132
+            Height: =88
             MaxLength: =DataSourceInfo([@Events], DataSourceInfo.MaxLength, "craad_name")
             Required: =true
             Update: =DataCardValue13.Text
