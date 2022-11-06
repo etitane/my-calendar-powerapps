@@ -8,14 +8,14 @@ Login As screen:
 
     TextInput1 As text:
         Default: =
-        HintText: ="Lietotājvārds"
+        HintText: ="Username"
         X: =488
         Y: =204
         ZIndex: =2
 
     TextInput2 As text:
         Default: =
-        HintText: ="Parole"
+        HintText: ="Password"
         Mode: =TextMode.Password
         X: =484
         Y: =288
