@@ -2,7 +2,7 @@ Event_details As screen:
 
     Button1_2 As button:
         OnSelect: |-
-            =SubmitForm(Form2); Navigate(Calendar, Fade)
+            =SubmitForm(Form2); Navigate(Calendar, Fade); If(SubmitForm(Form2), Notify("Event is updated!", NotificationType.Success))
             //Patch(Events,Defaults(Events),{Name:Name.Value})
         Text: ="Save"
         X: =632
