@@ -42,8 +42,8 @@ Profile_1 As screen:
         Item: =Gallery3.Selected
         NumberOfColumns: =1
         Width: =862
-        X: =168
-        Y: =235
+        X: =188
+        Y: =275
         ZIndex: =12
 
         Username_DataCard3 As typedDataCard.textualEditCard:
@@ -183,7 +183,7 @@ Profile_1 As screen:
                 ZIndex: =4
 
             TextInput3_1 As text:
-                BorderColor: =RGBA(0, 13, 75, 1)
+                BorderColor: =RGBA(39, 67, 125, 1)
                 Default: ="Text input"
                 OnChange: =Value(ThisItem.Password);
                 RadiusBottomLeft: =0
@@ -225,8 +225,8 @@ Profile_1 As screen:
         Item: =Gallery3.Selected
         NumberOfColumns: =1
         Width: =862
-        X: =168
-        Y: =120
+        X: =185
+        Y: =160
         ZIndex: =14
 
         Username_DataCard2_1 As typedDataCard.textualViewCard:
@@ -282,4 +282,16 @@ Profile_1 As screen:
                 X: =30
                 Y: =43.5
                 ZIndex: =3
+
+    Label4_2 As label:
+        BorderColor: =RGBA(39, 67, 125, 1)
+        BorderStyle: =BorderStyle.Dashed
+        BorderThickness: =2
+        Fill: =RGBA(241, 244, 249, 1)
+        Size: =15
+        Text: ="Log In Info"
+        Width: =210
+        X: =188
+        Y: =97
+        ZIndex: =15
 

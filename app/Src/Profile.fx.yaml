@@ -312,3 +312,15 @@ Profile As screen:
         Width: =LeftNavigation_9.MenuWidth
         ZIndex: =16
 
+    Label4 As label:
+        BorderColor: =RGBA(39, 67, 125, 1)
+        BorderStyle: =BorderStyle.Dashed
+        BorderThickness: =2
+        Fill: =RGBA(241, 244, 249, 1)
+        Size: =15
+        Text: ="Personal Info"
+        Width: =210
+        X: =258
+        Y: =92
+        ZIndex: =17
+
