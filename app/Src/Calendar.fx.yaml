@@ -172,7 +172,7 @@ Calendar As screen:
             ZIndex: =4
 
             Button7 As button:
-                Fill: =Switch(ThisItem.event_type.Value, "Uzdevums", Green, "Lekcijas", Yellow, "Praktiskais darbs", Red)
+                Fill: =Switch(Text(ThisItem.event_type), "Uzdevums", Green, "Lekcijas", Yellow, "Praktiskais darbs", Red)
                 Height: =17
                 OnSelect: =Set(varItem, ThisItem); Navigate(Event_details)
                 Size: =10
