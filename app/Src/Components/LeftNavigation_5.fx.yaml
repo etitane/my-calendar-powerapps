@@ -53,7 +53,7 @@ LeftNavigation_5 As CanvasComponent:
             VerticalAlign: =VerticalAlign.Top
             Width: =82
             X: =72
-            Y: =17
+            Y: =32
             ZIndex: =1
 
         NextArrow1 As icon.ChevronRight:
