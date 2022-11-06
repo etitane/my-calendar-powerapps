@@ -13,7 +13,10 @@ Profile_1 As screen:
         Fill: =RGBA(50, 86, 160, 1)
         FontWeight: =FontWeight.Bold
         Height: =66
-        OnSelect: =If(TextInput3_1 <> DataCardValue26_1,Notify("Record is saved!",NotificationType.Success) && SubmitForm(Form4_1));
+        OnSelect: |
+            =SubmitForm(Form4_1);
+            
+            If(SubmitForm(Form4_1), Notify("The record is saved!", NotificationType.Success.0))
         Size: =17
         Text: ="Save"
         Width: =121
