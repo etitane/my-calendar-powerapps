@@ -7,7 +7,7 @@ LeftNavigation_5 As CanvasComponent:
             {
                 Title: "Back",
                 Screen: Calendar,
-                Icon: Icon.ArrowLeft
+                Icon: Icon.BackArrow
             },
             {
                 Title: "Edit",

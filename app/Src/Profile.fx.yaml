@@ -310,29 +310,6 @@ Profile As screen:
         ZIndex: =15
 
     LeftNavigation_9 As LeftNavigation_5:
-        NavItem: |-
-            =Table(
-                {
-                    Title: "Back",
-                    Screen: Calendar,
-                    Icon: Icon.BackArrow
-                },
-                {
-                    Title: "Edit",
-                    Screen: Profile_1,
-                    Icon: Icon.Edit
-                },
-                {
-                    Title: "Calendar",
-                    Screen: Calendar,
-                    Icon: Icon.CalendarBlank
-                },
-                 {
-                    Title: "Logout",
-                    Screen: Login,
-                    Icon: Cancel
-                }
-            )
         Width: =LeftNavigation_9.MenuWidth
         ZIndex: =16
 

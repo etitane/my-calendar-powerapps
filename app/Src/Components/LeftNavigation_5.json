@@ -941,7 +941,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638033460718232151",
+    "LastModifiedTimestamp": "638033461494808641",
     "Name": "LeftNavigation_5",
     "Rules": [
       {
@@ -952,7 +952,7 @@
       },
       {
         "Category": "Data",
-        "InvariantScript": "Table(\r\n    {\r\n        Title: \"Back\",\r\n        Screen: Calendar,\r\n        Icon: Icon.ArrowLeft\r\n    },\r\n    {\r\n        Title: \"Edit\",\r\n        Screen: Profile_1,\r\n        Icon: Icon.Edit\r\n    },\r\n    {\r\n        Title: \"Calendar\",\r\n        Screen: Calendar,\r\n        Icon: Icon.CalendarBlank\r\n    },\r\n     {\r\n        Title: \"Logout\",\r\n        Screen: Login,\r\n        Icon: Cancel\r\n    }\r\n)",
+        "InvariantScript": "Table(\r\n    {\r\n        Title: \"Back\",\r\n        Screen: Calendar,\r\n        Icon: Icon.BackArrow\r\n    },\r\n    {\r\n        Title: \"Edit\",\r\n        Screen: Profile_1,\r\n        Icon: Icon.Edit\r\n    },\r\n    {\r\n        Title: \"Calendar\",\r\n        Screen: Calendar,\r\n        Icon: Icon.CalendarBlank\r\n    },\r\n     {\r\n        Title: \"Logout\",\r\n        Screen: Login,\r\n        Icon: Cancel\r\n    }\r\n)",
         "Property": "NavItem",
         "RuleProviderType": "System"
       },
@@ -1031,7 +1031,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638033460718232151",
+  "LastModifiedTimestamp": "638033461494808641",
   "Name": "00aaa59d040f4f6b8c62f0a41db68ee3",
   "OverridableProperties": {},
   "TemplateOriginalName": "f7c2e4baec1d40e0ba77a8fc625c59b1",
