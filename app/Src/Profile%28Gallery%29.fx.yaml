@@ -1,7 +1,9 @@
 "'Profile(Gallery)' As screen":
     Fill: =
+    LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
 
     "Gallery3 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+        BorderColor: =RGBA(166, 166, 166, 1)
         Height: =698
         Items: =Sort(Lietotajs,'Created On',Descending)
         Layout: =Layout.Vertical
@@ -14,12 +16,17 @@
         ZIndex: =1
 
         Title2 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            Size: =20
             Text: =ThisItem.Username
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
@@ -28,12 +35,16 @@
             ZIndex: =1
 
         Subtitle1 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            Size: =18
             Text: =ThisItem.'Created On'
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
@@ -42,12 +53,16 @@
             ZIndex: =2
 
         Body1 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
             Height: =Self.Size * 4
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            Size: =16
             Text: =ThisItem.e_mail
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
@@ -57,13 +72,25 @@
 
         NextArrow2 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(73, 130, 5, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
             Height: =60
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.ChevronRight
             OnSelect: =Select(Parent)
             PaddingBottom: =10
             PaddingLeft: =10
             PaddingRight: =10
             PaddingTop: =10
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
             TabIndex: =0
             Tooltip: ="Показать сведения об элементе"
             Width: =60
@@ -72,6 +99,8 @@
             ZIndex: =4
 
         Separator1 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth

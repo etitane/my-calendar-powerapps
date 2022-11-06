@@ -1,48 +1,155 @@
 Login As screen:
+    LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
 
-    Label2 As label:
-        Text: ="MyCalendar"
-        X: =543
-        Y: =102
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(199, 237, 229, 1)
+        FocusedBorderThickness: =4
+        Height: =551
+        HoverFill: =RGBA(73, 130, 5, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
+        TabIndex: =-10
+        Width: =453
+        X: =411
+        Y: =45
         ZIndex: =1
 
-    TextInput1 As text:
-        Default: =
-        HintText: ="Username"
-        X: =488
-        Y: =204
+    Label2 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(0, 143, 112, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(33, 191, 160, 0)
+        FocusedBorderThickness: =4
+        Font: =Font.'Great Vibes'
+        FontWeight: =FontWeight.Bold
+        Height: =45
+        Size: =25
+        Text: ="MyCalendar"
+        Width: =175
+        X: =543
+        Y: =102
         ZIndex: =2
 
-    TextInput2 As text:
+    TextInput1 As text:
+        BorderColor: =RGBA(0, 143, 112, 1)
+        BorderThickness: =4
+        Color: =RGBA(0, 0, 0, 1)
         Default: =
-        HintText: ="Password"
-        Mode: =TextMode.Password
-        X: =484
-        Y: =288
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        HintText: ="Username"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Size: =13
+        X: =488
+        Y: =204
         ZIndex: =3
 
+    TextInput2 As text:
+        BorderColor: =RGBA(0, 143, 112, 1)
+        BorderThickness: =4
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        HintText: ="Password"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        Mode: =TextMode.Password
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Size: =13
+        X: =484
+        Y: =288
+        ZIndex: =4
+
     Button2 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderThickness: =4
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 143, 112, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
         OnSelect: |-
             =If(!IsBlank(LookUp(Lietotajs,Username=TextInput1.Text And Password=TextInput2.Text)),Navigate(Calendar,ScreenTransition.Cover,{username1: LookUp(Lietotajs,Username=TextInput1.Text)}),UpdateContext({ShowWrongCredentials: true }))
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        Size: =15
         Text: ="Log In"
         X: =558
         Y: =403
-        ZIndex: =4
+        ZIndex: =5
 
     Label3 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
         Color: =RGBA(184, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
         Height: =58
+        Size: =13
         Text: ="Nepareiz lietotājvārds vai parole"
         Visible: =ShowWrongCredentials
         Width: =250
         X: =513
         Y: =336
-        ZIndex: =5
+        ZIndex: =6
 
     Button3 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 143, 112, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
         OnSelect: =Navigate(Registration)
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        Size: =15
         Text: ="Sign Up"
         X: =558
         Y: =482
-        ZIndex: =6
+        ZIndex: =7
 

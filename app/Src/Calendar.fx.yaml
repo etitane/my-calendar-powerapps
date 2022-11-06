@@ -1,6 +1,7 @@
 Calendar As screen:
     Fill: =
     Height: =Max(App.Height, App.DesignHeight)
+    LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
     OnVisible: |-
         =/*resets calendar view and date selection to today*/
         Set(_calendarVisible, true);
@@ -13,8 +14,12 @@ Calendar As screen:
 
     LblMonthSelected1_1 As label:
         Align: =Align.Center
+        Color: =RGBA(0, 143, 112, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
         Height: =50
-        Size: =18
+        Size: =20
         Text: =Text(_firstDayOfMonth, "mmmm yyyy")
         Visible: =_calendarVisible
         Width: =419
@@ -24,7 +29,16 @@ Calendar As screen:
         ZIndex: =1
 
     iconPrevMonth1_1 As icon.ChevronLeft:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(0, 143, 112, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
         Height: =50
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.ChevronLeft
         OnSelect: |-
             =/*changes month view to previous month*/
@@ -37,6 +51,9 @@ Calendar As screen:
         PaddingLeft: =7
         PaddingRight: =7
         PaddingTop: =7
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
         TabIndex: =0
         Tooltip: ="View previous month"
         Visible: =_calendarVisible
@@ -46,7 +63,16 @@ Calendar As screen:
         ZIndex: =2
 
     iconNextMonth1_1 As icon.ChevronRight:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(0, 143, 112, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
         Height: =50
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.ChevronRight
         OnSelect: |-
             =/*changes month view to next month*/
@@ -59,6 +85,9 @@ Calendar As screen:
         PaddingLeft: =7
         PaddingRight: =7
         PaddingTop: =7
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
         TabIndex: =0
         Tooltip: ="View next month"
         Visible: =_calendarVisible
@@ -69,6 +98,7 @@ Calendar As screen:
 
     WeekdayGallery1_1 As gallery.WeekdayGallery:
         AccessibleLabel: ="Days of the week"
+        BorderColor: =RGBA(166, 166, 166, 1)
         Height: =33
         Items: =Calendar.WeekdaysShort()
         ShowScrollbar: =false
@@ -82,12 +112,13 @@ Calendar As screen:
 
         Title1_1 As label:
             Align: =Align.Center
-            Color: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 112, 88, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
             Height: =WeekdayGallery1_1.TemplateHeight
             OnSelect: =Select(Parent)
-            Size: |+
-                =30
-                
+            Size: =25
             Text: =ThisItem.Value
             VerticalAlign: =Middle
             Width: =WeekdayGallery1_1.TemplateWidth
@@ -98,7 +129,9 @@ Calendar As screen:
 
     MonthDayGallery1_1 As gallery.MonthDayGallery:
         AccessibleLabel: ="Days of selected month"
+        BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =1
+        Fill: =RGBA(223, 245, 241, 1)
         Height: =515
         Items: =[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19, 20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41]
         Layout: =Layout.Vertical
@@ -113,6 +146,8 @@ Calendar As screen:
         ZIndex: =5
 
         Circle1_1 As circle:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =ColorFade(RGBA(73, 130, 5, 1), -50%)
             Height: =Self.Width
             OnSelect: =Select(Parent)
             Visible: |-
@@ -125,8 +160,13 @@ Calendar As screen:
             ZIndex: =1
 
         Subcircle1_1 As circle:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(73, 130, 5, 1)
+            Fill: =RGBA(73, 130, 5, 1)
             Height: =3 * Title2_1.Size
+            HoverFill: =RGBA(73, 130, 5, 1)
             OnSelect: =Select(Parent)
+            PressedFill: =RGBA(73, 130, 5, 1)
             Visible: =And(DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, Title2_1.Visible)
             Width: =Self.Height
             X: =65
@@ -135,7 +175,10 @@ Calendar As screen:
         Title2_1 As label:
             Align: =Align.Center
             BorderColor: =RGBA(0, 0, 0, 0)
+            BorderThickness: =2
             Color: =If(DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, RGBA(255, 255, 255, 1), DateAdd(_firstDayInView, ThisItem.Value) = Today(), RGBA(47, 41, 43, 1), LblMonthSelected1_1.Color)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: |-
                 =/*Fill value changes if the gallery item day = today, or if it lies outside of the current month*/             
                 If(
@@ -147,9 +190,9 @@ Calendar As screen:
                     Abs(Self.Text - ThisItem.Value) > 10,RGBA(200, 200, 200, 0.3), RGBA(0, 0, 0, 0))
             FocusedBorderColor: =Self.Color
             FocusedBorderThickness: =2
+            Font: =Font.'Segoe UI'
             Height: =36
             OnSelect: =Set(_dateSelected, DateAdd(_firstDayInView, ThisItem.Value, Days))
-            Size: =14
             TabIndex: =0
             Text: =Day(DateAdd(_firstDayInView,ThisItem.Value,Days))
             VerticalAlign: =Middle
@@ -161,6 +204,7 @@ Calendar As screen:
             ZIndex: =3
 
         Gallery4 As gallery.galleryVertical:
+            BorderColor: =RGBA(166, 166, 166, 1)
             Height: =54
             Items: |
                 =//Filter('Events', 'Created On' = DateAdd(_firstDayInView,ThisItem.Value,Days))
@@ -172,9 +216,26 @@ Calendar As screen:
             ZIndex: =4
 
             Button7 As button:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =Switch(Text(ThisItem.event_type), "Uzdevums", Green, "Lekcijas", Yellow, "Praktiskais darbs", Red)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =17
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
                 OnSelect: =Set(varItem, ThisItem); Navigate(Event_details)
+                PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
                 Size: =10
                 Text: =ThisItem.Name
                 Width: =163
@@ -185,10 +246,45 @@ Calendar As screen:
         ZIndex: =6
 
     Button8 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderThickness: =4
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 143, 112, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
         OnSelect: |-
             =Navigate(Create_new_event,ScreenTransition.Cover,{username1: username1})
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        Size: =15
         Text: ="Add event"
         X: =1172
         Y: =36
         ZIndex: =7
+
+    Label2_3 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(0, 143, 112, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(33, 191, 160, 0)
+        FocusedBorderThickness: =4
+        Font: =Font.'Great Vibes'
+        FontWeight: =FontWeight.Bold
+        Height: =45
+        Size: =25
+        Text: ="MyCalendar"
+        Width: =175
+        X: =631
+        Y: =36
+        ZIndex: =8
 
