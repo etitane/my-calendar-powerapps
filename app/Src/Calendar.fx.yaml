@@ -186,8 +186,7 @@ Calendar As screen:
 
     Button8 As button:
         OnSelect: |-
-            =
-            Navigate(Create_new_event)
+            =Navigate(Create_new_event,ScreenTransition.Cover,{username1: username1})
         Text: ="Add event"
         X: =1172
         Y: =36

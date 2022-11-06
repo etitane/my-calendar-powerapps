@@ -23,7 +23,7 @@ Login As screen:
 
     Button2 As button:
         OnSelect: |-
-            =If(!IsBlank(LookUp(Lietotajs,Username=TextInput1.Text And Password=TextInput2.Text)),Navigate(Calendar,ScreenTransition.Cover,{username1: LookUp(Lietotajs,Username=TextInput1.Text).Username}),UpdateContext({ShowWrongCredentials: true }))
+            =If(!IsBlank(LookUp(Lietotajs,Username=TextInput1.Text And Password=TextInput2.Text)),Navigate(Calendar,ScreenTransition.Cover,{username1: LookUp(Lietotajs,Username=TextInput1.Text)}),UpdateContext({ShowWrongCredentials: true }))
         Text: ="Log In"
         X: =558
         Y: =403
