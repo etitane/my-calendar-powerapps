@@ -502,7 +502,7 @@ Profile_1 As screen:
         Size: =25
         Text: ="MyCalendar"
         Width: =175
-        X: =82
-        Y: =142
+        X: =256
+        Y: =30
         ZIndex: =16
 
