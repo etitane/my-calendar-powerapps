@@ -101,7 +101,7 @@ Registration As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =13
-                Text: =
+                Text: =If((DataCardValue6.Text = DataCardValue11.Text), "", "Password don't match")
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
