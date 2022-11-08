@@ -449,7 +449,7 @@ Registration As screen:
                 PaddingTop: =0
                 Size: =13
                 Text: |-
-                    =If(IsMatch(DataCardValue6.Text, "^(?=[^\d_].*?\d)\w(\w|[!@#$%]){7,20}"), "", "Password should contain special symbols and be at least 8 characters")
+                    =If(IsMatch(DataCardValue6.Text, "^(?=[^\d_].*?\d)\w(\w|[!@#$%]){8,20}"), "", "Password should contain special symbols and be at least 8 characters")
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
