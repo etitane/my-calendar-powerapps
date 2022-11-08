@@ -7,7 +7,7 @@
         Height: =698
         Items: =Lietotajs
         Layout: =Layout.Vertical
-        OnSelect: =
+        OnSelect: =ThisItem.Username
         TemplatePadding: =0
         TemplateSize: =Min(168, Self.Height - 60)
         Width: =780
