@@ -734,8 +734,8 @@ Registration As screen:
         Size: =15
         Text: ="Sign Up"
         Tooltip: =If(Button1.DisplayMode = DisplayMode.Edit, "Sign up", "Please complete all fieldds before sign up")
-        X: =585
-        Y: =719
+        X: =943
+        Y: =700
         ZIndex: =2
 
     Label1 As label:
