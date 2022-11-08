@@ -57,7 +57,7 @@ LeftNavigation_4 As CanvasComponent:
             Height: =47
             Icon: =ThisItem.Icon
             OnSelect: =Navigate(ThisItem.Screen, Fade)
-            Width: =45
+            Width: =59
             X: =6
             Y: =5
             ZIndex: =2
