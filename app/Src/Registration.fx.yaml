@@ -597,6 +597,7 @@ Registration As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =If(Form1.Valid, DisplayMode.Edit, DisplayMode.Disabled)
         Fill: =RGBA(0, 143, 112, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
