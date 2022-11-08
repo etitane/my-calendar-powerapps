@@ -354,7 +354,7 @@ Registration As screen:
                 PaddingLeft: =0
                 Size: =13
                 Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Visible: =And(!Parent.Valid, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey7.Y
