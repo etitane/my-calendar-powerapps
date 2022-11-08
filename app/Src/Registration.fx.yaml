@@ -101,7 +101,7 @@ Registration As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =13
-                Text: =Parent.Error
+                Text: =
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
