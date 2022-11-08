@@ -208,7 +208,7 @@ Calendar As screen:
             Height: =54
             Items: |
                 =//Filter('Events', 'Created On' = DateAdd(_firstDayInView,ThisItem.Value,Days))
-                Filter(Events, Text(Date, ShortDate) = Text(DateAdd(_firstDayInView, ThisItem.Value), ShortDate))
+                Filter(Events, Text(Date, ShortDate) = Text(DateAdd(_firstDayInView, ThisItem.Value), ShortDate) && Lietotajs_username.Username = username1.Username)
             Layout: =Layout.Vertical
             TemplateSize: =19
             Width: =173
