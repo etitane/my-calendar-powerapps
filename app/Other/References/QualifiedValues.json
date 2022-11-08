@@ -2,20 +2,6 @@
   "QualifiedValues": [
     {
       "Kind": "default.cds_craad_lietotajs_forms",
-      "Namespace": "Lietotajs (Forms)",
-      "Values": {
-        "Information": "a553b6d6-2977-4c56-af4a-ff35d2ed0d0e"
-      }
-    },
-    {
-      "Kind": "default.cds_craad_event_forms",
-      "Namespace": "Events (Forms)",
-      "Values": {
-        "Information": "cd725ee4-1a20-4d33-a60c-e339a35bf3cb"
-      }
-    },
-    {
-      "Kind": "default.cds_craad_lietotajs_forms",
       "Namespace": "Lietotajs (Формы)",
       "Values": {
         "Information": "a553b6d6-2977-4c56-af4a-ff35d2ed0d0e"
@@ -24,6 +10,20 @@
     {
       "Kind": "default.cds_craad_event_forms",
       "Namespace": "Events (Формы)",
+      "Values": {
+        "Information": "cd725ee4-1a20-4d33-a60c-e339a35bf3cb"
+      }
+    },
+    {
+      "Kind": "default.cds_craad_lietotajs_forms",
+      "Namespace": "Lietotajs (Forms)",
+      "Values": {
+        "Information": "a553b6d6-2977-4c56-af4a-ff35d2ed0d0e"
+      }
+    },
+    {
+      "Kind": "default.cds_craad_event_forms",
+      "Namespace": "Events (Forms)",
       "Values": {
         "Information": "cd725ee4-1a20-4d33-a60c-e339a35bf3cb"
       }

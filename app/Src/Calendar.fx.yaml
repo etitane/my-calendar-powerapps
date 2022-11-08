@@ -302,7 +302,7 @@ Calendar As screen:
         HoverColor: =RGBA(0, 0, 0, 0)
         HoverFill: =ColorFade(RGBA(242, 250, 243, 100), -0.005%)
         OnSelect: |-
-            =Navigate(Profile,ScreenTransition.Cover,{username1: username1})
+            =Navigate(Profile,ScreenTransition.Cover,{username1:username1})
         PressedBorderColor: =ColorFade(RGBA(242, 250, 243, 100), -5%)
         PressedColor: =RGBA(0, 0, 0, 0)
         PressedFill: =

@@ -7,7 +7,7 @@
         Height: =698
         Items: =Lietotajs
         Layout: =Layout.Vertical
-        OnSelect: =SortOrder(ThisItem.'Created On')
+        OnSelect: =
         TemplatePadding: =0
         TemplateSize: =Min(168, Self.Height - 60)
         Width: =780
