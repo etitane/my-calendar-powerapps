@@ -615,6 +615,7 @@ Registration As screen:
             ColorFade(RGBA(0,143,112, 1), -30%)
         Size: =15
         Text: ="Sign Up"
+        Tooltip: =If(Button1.DisplayMode = DisplayMode.Edit, "Sign up", "Please complete all fieldds before sign up")
         X: =585
         Y: =690
         ZIndex: =2
