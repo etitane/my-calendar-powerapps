@@ -123,7 +123,7 @@ Registration As screen:
                 PaddingLeft: =0
                 Size: =13
                 Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Visible: =And(!Parent.Valid, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey4.Y
@@ -238,7 +238,7 @@ Registration As screen:
                 PaddingLeft: =0
                 Size: =13
                 Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Visible: =And(!Parent.Valid, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey5.Y
@@ -585,7 +585,7 @@ Registration As screen:
                 PaddingLeft: =0
                 Size: =13
                 Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Visible: =And(!Parent.Valid, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey1.Y
