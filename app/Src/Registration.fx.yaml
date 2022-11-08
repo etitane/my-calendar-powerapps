@@ -6,9 +6,10 @@ Registration As screen:
         DataSource: =Lietotajs
         DefaultMode: =FormMode.New
         Fill: =RGBA(199, 237, 229, 1)
-        Height: =525
+        Height: =611
         NumberOfColumns: =1
-        Width: =464
+        OnFailure: =Notify("Some data seem to be missing", NotificationType.Information)
+        Width: =494
         X: =418
         Y: =91
         ZIndex: =1
@@ -25,7 +26,7 @@ Registration As screen:
             MaxLength: =DataSourceInfo([@Lietotajs], DataSourceInfo.MaxLength, "craad_e_mail")
             Required: =true
             Update: =DataCardValue4.Text
-            Width: =464
+            Width: =494
             X: =0
             Y: =1
             ZIndex: =1
@@ -140,7 +141,7 @@ Registration As screen:
             MaxLength: =DataSourceInfo([@Lietotajs], DataSourceInfo.MaxLength, "craad_firstname")
             Required: =true
             Update: =DataCardValue5.Text
-            Width: =464
+            Width: =494
             X: =0
             Y: =2
             ZIndex: =1
@@ -256,7 +257,7 @@ Registration As screen:
             MaxLength: =DataSourceInfo([@Lietotajs], DataSourceInfo.MaxLength, "craad_surname")
             Required: =true
             Update: =DataCardValue7.Text
-            Width: =464
+            Width: =494
             X: =0
             Y: =3
             ZIndex: =1
@@ -371,7 +372,7 @@ Registration As screen:
             MaxLength: =DataSourceInfo([@Lietotajs], DataSourceInfo.MaxLength, "craad_password")
             Required: =true
             Update: =DataCardValue6.Text
-            Width: =464
+            Width: =494
             X: =0
             Y: =4
             ZIndex: =1
@@ -487,7 +488,7 @@ Registration As screen:
             MaxLength: =DataSourceInfo([@Lietotajs], DataSourceInfo.MaxLength, "craad_name")
             Required: =true
             Update: =DataCardValue1.Text
-            Width: =464
+            Width: =494
             X: =0
             Y: =0
             ZIndex: =2
@@ -613,8 +614,8 @@ Registration As screen:
             ColorFade(RGBA(0,143,112, 1), -30%)
         Size: =15
         Text: ="Sign Up"
-        X: =570
-        Y: =640
+        X: =585
+        Y: =690
         ZIndex: =2
 
     Label1 As label:
