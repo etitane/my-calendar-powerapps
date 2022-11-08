@@ -101,7 +101,7 @@ Registration As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =13
-                Text: =Parent.Error
+                Text: =If(!(IsMatch(DataCardValue4.Text, Match.Email)), "the Email should be in the format example@example.com")
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
@@ -128,24 +128,6 @@ Registration As screen:
                 Wrap: =false
                 Y: =DataCardKey4.Y
                 ZIndex: =4
-
-            Label4 As label:
-                Align: =Align.Center
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(184, 0, 0, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                Height: =43
-                Size: =13
-                Text: =If(!(IsMatch(DataCardValue4.Text, Match.Email)), "the Email should be in the format example@example.com")
-                Width: =418
-                X: =76
-                Y: =5
-                ZIndex: =5
 
         "'First name_DataCard1' As typedDataCard.textualEditCard":
             BorderColor: =RGBA(0, 143, 112, 1)
