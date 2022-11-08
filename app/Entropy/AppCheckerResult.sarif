@@ -2354,6 +2354,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Profile_1.username1"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Profile_1.username1",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "username1",
+                "module": "Profile_1",
+                "type": "Profile_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Profile_1.Form4_2.Item"
                 }
               ],
@@ -2377,7 +2407,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -2407,36 +2437,6 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Profile.username1"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Profile.username1",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "username1",
-                "module": "Profile",
-                "type": "Profile"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
           "ruleIndex": 10
         },
         {
@@ -2467,7 +2467,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
+          "ruleIndex": 10
         }
       ],
       "tool": {
@@ -2628,23 +2628,6 @@
               }
             },
             {
-              "id": "app-InefficientDelayLoading",
-              "messageStrings": {
-                "issue": {
-                  "text": "Неэффективная отложенная загрузка"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Используйте переменные, коллекции и контекст навигации для предоставления общего доступа к состоянию на экранах."
-                ],
-                "level": "Medium",
-                "primaryCategory": "performance",
-                "whyFix": "Элементы управления, которые ссылаются на элементы управления на других экранах, могут замедлять загрузку приложения и навигацию по нему. Это может приводить к тому, что приложение загружает другие экраны незамедлительно вместо того, чтобы дождаться перехода пользователя на какой-либо из них."
-              }
-            },
-            {
               "id": "app-UnusedVariables",
               "messageStrings": {
                 "issue": {
@@ -2659,6 +2642,23 @@
                 "level": "Medium",
                 "primaryCategory": "performance",
                 "whyFix": "Эта переменная объявлена, но на нее не ссылаются никакие элементы управления, поэтому она не нужна."
+              }
+            },
+            {
+              "id": "app-InefficientDelayLoading",
+              "messageStrings": {
+                "issue": {
+                  "text": "Неэффективная отложенная загрузка"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Используйте переменные, коллекции и контекст навигации для предоставления общего доступа к состоянию на экранах."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "Элементы управления, которые ссылаются на элементы управления на других экранах, могут замедлять загрузку приложения и навигацию по нему. Это может приводить к тому, что приложение загружает другие экраны незамедлительно вместо того, чтобы дождаться перехода пользователя на какой-либо из них."
               }
             }
           ],
