@@ -26,6 +26,7 @@ Registration As screen:
             MaxLength: =DataSourceInfo([@Lietotajs], DataSourceInfo.MaxLength, "craad_password")
             Required: =true
             Update: =DataCardValue11.Text
+            Visible: =true
             Width: =502
             X: =0
             Y: =5
@@ -68,6 +69,7 @@ Registration As screen:
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
                 MaxLength: =Parent.MaxLength
+                Mode: =TextMode.Password
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(73, 130, 5, 1)
                 PressedColor: =RGBA(51, 51, 51, 1)
