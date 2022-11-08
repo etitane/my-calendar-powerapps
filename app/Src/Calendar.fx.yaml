@@ -299,12 +299,12 @@ Calendar As screen:
         FontWeight: =FontWeight.Semibold
         Height: =62
         HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverColor: =RGBA(0, 0, 0, 0)
         HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
         OnSelect: |-
             =Navigate(Profile,ScreenTransition.Cover,{username1: username1})
         PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedColor: =RGBA(0, 0, 0, 0)
         PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
