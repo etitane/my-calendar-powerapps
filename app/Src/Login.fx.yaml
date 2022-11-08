@@ -124,13 +124,13 @@ Login As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =58
+        Height: =56
         Size: =13
-        Text: ="Nepareiz lietotājvārds vai parole"
+        Text: ="Username or Password is incorrect"
         Visible: =ShowWrongCredentials
-        Width: =250
-        X: =513
-        Y: =336
+        Width: =291
+        X: =502
+        Y: =328
         ZIndex: =6
 
     Button3 As button:

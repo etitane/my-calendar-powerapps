@@ -106,7 +106,7 @@
     "PublishDataLocally": false,
     "PublishResourcesLocally": false,
     "PublishTarget": "player",
-    "UserLocale": "en-US"
+    "UserLocale": "ru-RU"
   },
   "ScreenOrder": [
     "Login",
@@ -115,7 +115,6 @@
     "Event_details",
     "Calendar",
     "Profile",
-    "Profile_1",
-    "Profile(Gallery)"
+    "Profile_1"
   ]
 }

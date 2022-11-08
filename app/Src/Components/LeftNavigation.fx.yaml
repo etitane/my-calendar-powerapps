@@ -55,7 +55,7 @@ LeftNavigation As CanvasComponent:
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =51
             Icon: =ThisItem.Icon
-            OnSelect: =Navigate(Profile, Fade
+            OnSelect: =Select(Parent)
             Width: =54
             X: =11
             Y: =17

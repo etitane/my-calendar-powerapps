@@ -10,8 +10,8 @@ Registration As screen:
         NumberOfColumns: =1
         OnFailure: =Notify("Some data seem to be missing", NotificationType.Information)
         Width: =525
-        X: =418
-        Y: =78
+        X: =410
+        Y: =70
         ZIndex: =1
 
         e_mail_DataCard1 As typedDataCard.textualEditCard:
@@ -753,7 +753,7 @@ Registration As screen:
         Text: ="New account"
         Width: =227
         X: =536
-        Y: =25
+        Y: =12
         ZIndex: =3
 
     Icon1 As icon.BackArrow:
