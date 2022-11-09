@@ -44,7 +44,7 @@ Create_new_event As screen:
             DisplayMode: =DisplayMode.Edit
             DisplayName: =DataSourceInfo([@Events],DataSourceInfo.DisplayName,"craad_details")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =130
+            Height: =136
             Required: =false
             Update: =DataCardValue17_1.Text
             Width: =584
@@ -62,14 +62,14 @@ Create_new_event As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =14
+                Height: =33
                 PaddingLeft: =0
                 Size: =13
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =524
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =21
+                Y: =43
                 ZIndex: =1
 
             DataCardValue17_1 As text:
@@ -899,8 +899,8 @@ Create_new_event As screen:
                 Size: =13
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey14_1.Y + DataCardKey14_1.Height + 5
+                X: =15
+                Y: =55
                 ZIndex: =2
 
             ErrorMessage12_1 As label:
