@@ -750,8 +750,8 @@ Registration As screen:
         Size: =25
         Text: ="New account"
         Width: =227
-        X: =172
-        Y: =174
+        X: =191
+        Y: =175
         ZIndex: =3
 
     Icon1 As icon.BackArrow:
