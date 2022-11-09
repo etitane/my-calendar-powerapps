@@ -51,7 +51,7 @@ Profile_1 As screen:
         DataSource: =Lietotajs
         Fill: =RGBA(199, 237, 229, 1)
         Height: =390
-        Item: =Gallery3.Selected
+        Item: =First(Gallery3.AllItems)
         NumberOfColumns: =1
         Width: =862
         X: =256
@@ -440,7 +440,7 @@ Profile_1 As screen:
         DataSource: =Lietotajs
         Fill: =RGBA(241, 244, 249, 1)
         Height: =95
-        Item: =Gallery3.Selected
+        Item: =First(Gallery3.AllItems)
         NumberOfColumns: =1
         Width: =862
         X: =257
