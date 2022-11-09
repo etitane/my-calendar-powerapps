@@ -106,7 +106,7 @@
     "PublishDataLocally": false,
     "PublishResourcesLocally": false,
     "PublishTarget": "player",
-    "UserLocale": "ru-RU"
+    "UserLocale": "en-US"
   },
   "ScreenOrder": [
     "Login",
