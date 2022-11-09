@@ -8,7 +8,7 @@ Registration As screen:
         Fill: =RGBA(199, 237, 229, 1)
         Height: =706
         NumberOfColumns: =1
-        OnFailure: =Notify("Some data seem to be missing", NotificationType.Information)
+        OnFailure: =
         Width: =587
         X: =410
         Y: =24
