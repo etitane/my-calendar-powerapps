@@ -120,7 +120,7 @@ Profile As screen:
             BorderColor: =RGBA(0, 143, 112, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="craad_firstname"
-            Default: =ThisItem.'First name'
+            Default: =loggedUser.'First name'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Lietotajs],DataSourceInfo.DisplayName,"craad_firstname")
             Fill: =RGBA(0, 0, 0, 0)
@@ -273,7 +273,7 @@ Profile As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =4
                 Color: =RGBA(51, 51, 51, 1)
-                Default: =Parent.Default
+                Default: =loggedUser.Surname
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -388,7 +388,7 @@ Profile As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =4
                 Color: =RGBA(51, 51, 51, 1)
-                Default: =Parent.Default
+                Default: =loggedUser.e_mail
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -512,7 +512,7 @@ Profile As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =15
-                Text: =Parent.Default
+                Text: =loggedUser.'Created On'
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey3.X + DataCardKey3.Width
                 Y: =10

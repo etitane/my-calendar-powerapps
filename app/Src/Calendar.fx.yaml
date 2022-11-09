@@ -10,6 +10,7 @@ Calendar As screen:
         Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), Days));
         Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, Months), -1, Days));
         ClearCollect(colData, Filter(Events, 'Created On' >= _firstDayOfMonth && 'Created On' <= _lastDayOfMonth));
+        Set( loggedUser, username1 )
     Width: =Max(App.Width, App.DesignWidth)
 
     LblMonthSelected1_1 As label:
