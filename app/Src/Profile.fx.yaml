@@ -98,6 +98,7 @@ Profile As screen:
             =ColorFade(RGBA(0,143,112, 1), -30%)
         Size: =17
         Text: ="Save"
+        Tooltip: =If(Button6.DisplayMode = DisplayMode.Edit, "Save", "Please complete all fields before save user data")
         Width: =135
         X: =655
         Y: =659
