@@ -114,6 +114,7 @@ Profile_1 As screen:
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
                 MaxLength: =Parent.MaxLength
+                Mode: =TextMode.Password
                 OnChange: =
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(0, 143, 112, 1)
@@ -231,6 +232,7 @@ Profile_1 As screen:
                 HoverColor: =RGBA(0, 143, 112, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
                 MaxLength: =Parent.MaxLength
+                Mode: =TextMode.Password
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(0, 143, 112, 1)
                 PressedColor: =RGBA(51, 51, 51, 1)

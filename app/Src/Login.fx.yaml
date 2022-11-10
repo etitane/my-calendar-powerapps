@@ -1,5 +1,6 @@
 Login As screen:
     LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
+    OnVisible: =
 
     Rectangle1 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -104,7 +105,7 @@ Login As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(199,237,229, 1), -10%)
         OnSelect: |-
-            =If(!IsBlank(LookUp(Lietotajs,Username=TextInput1.Text And Password=TextInput2.Text)),Navigate(Calendar,ScreenTransition.Cover,{username1: LookUp(Lietotajs,Username=TextInput1.Text)}),UpdateContext({ShowWrongCredentials: true }))
+            =If(!IsBlank(LookUp(Lietotajs,Username=TextInput1.Text And Password=TextInput2.Text)),Navigate(Calendar,ScreenTransition.Cover,{username1: LookUp(Lietotajs,Username=TextInput1.Text)}),UpdateContext({ShowWrongCredentials: true }));
         PressedBorderColor: |
             =ColorFade(RGBA(0,143,112, 1), -30%)
         PressedColor: =RGBA(255, 255, 255, 1)
