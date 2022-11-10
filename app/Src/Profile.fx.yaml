@@ -435,7 +435,7 @@ Profile As screen:
                 Size: =13
                 Text: =If(!(IsMatch(DataCardValue15.Text, Match.Email)), "the Email should be in the format example@example.com")
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =467
+                Width: =544
                 X: =393
                 Y: =64
                 ZIndex: =3
