@@ -749,7 +749,7 @@ Event_details As screen:
         PressedFill: =ColorFade(RGBA(0,143,112, 1), -30%)
         Size: =15
         Text: ="Save"
-        Tooltip: =If(Button1_2.DisplayMode = DisplayMode.Edit, "Save", "Please complete all fields before save event")
+        Tooltip: =If(Button1_2.DisplayMode = DisplayMode.Edit, "Save", "Please complete all fields before update event")
         X: =626
         Y: =659
         ZIndex: =5
