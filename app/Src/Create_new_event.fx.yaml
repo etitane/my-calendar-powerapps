@@ -878,6 +878,7 @@ Create_new_event As screen:
             ColorFade(RGBA(0,143,112, 1), -30%)
         Size: =15
         Text: ="Create"
+        Tooltip: =If(Button1_1.DisplayMode = DisplayMode.Edit, "Create event", "Please complete all fields before create event")
         Width: =131
         X: =636
         Y: =640
