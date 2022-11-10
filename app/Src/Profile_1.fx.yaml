@@ -6,7 +6,7 @@ Profile_1 As screen:
         BorderThickness: =4
         Color: =White
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =ColorFade(Button6_2.Color, -50%)
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayMode: =If(Form4_1.Valid && IsBlank(ErrorMessage23_1.Text) && IsBlank(ErrorMessage8.Text), Edit, Disabled)
         Fill: =RGBA(0, 143, 112, 1)
