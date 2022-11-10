@@ -87,7 +87,7 @@ Profile As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(199,237,229, 1), -10%)
         OnSelect: |
-            =SubmitForm(Form3);
+            =SubmitForm(Form3) && Navigate(Calendar, Fade);
             //Patch(Lietotajs,Defaults(Lietotajs),{Name:Name.Value})
             If(SubmitForm(Form3), Notify("The record is saved!", NotificationType.Success))
         PressedBorderColor: |
