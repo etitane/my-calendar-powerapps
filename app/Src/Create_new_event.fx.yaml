@@ -28,7 +28,6 @@ Create_new_event As screen:
         Height: =655
         Item: =Defaults(Events)
         NumberOfColumns: =1
-        OnFailure: =true
         OnReset: =true
         OnSuccess: =true
         Width: =584
