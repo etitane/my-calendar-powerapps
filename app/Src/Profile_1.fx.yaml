@@ -18,7 +18,7 @@ Profile_1 As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(199,237,229, 1), -10%)
         OnSelect: |
-            =SubmitForm(Form4_1);
+            =SubmitForm(Form4_1) && Navigate(Profile, Fade);
             If(SubmitForm(Form4_1), Notify("Record is Saved", NotificationType.Success));
         PressedBorderColor: =ColorFade(RGBA(0,143,112, 1), -30%)
         PressedColor: =RGBA(255, 255, 255, 1)
