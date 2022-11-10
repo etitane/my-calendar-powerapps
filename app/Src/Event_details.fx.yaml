@@ -578,7 +578,7 @@ Event_details As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Events],DataSourceInfo.DisplayName,"craad_name")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =88
+            Height: =122
             MaxLength: =DataSourceInfo([@Events], DataSourceInfo.MaxLength, "craad_name")
             Required: =true
             Update: =DataCardValue13.Text
@@ -640,7 +640,6 @@ Event_details As screen:
                 ZIndex: =2
 
             ErrorMessage12 As label:
-                AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -650,7 +649,7 @@ Event_details As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =10
+                Height: =23
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -659,7 +658,7 @@ Event_details As screen:
                 Size: =13
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
+                Width: =524
                 X: =30
                 Y: =DataCardValue13.Y + DataCardValue13.Height
                 ZIndex: =3
@@ -732,6 +731,7 @@ Event_details As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =If(Form2.Valid && IsBlank(ErrorMessage12.Text) && IsBlank(ErrorMessage13.Text), Edit, Disabled)
         Fill: =RGBA(0, 143, 112, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
