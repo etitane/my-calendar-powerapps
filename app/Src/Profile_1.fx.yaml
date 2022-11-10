@@ -324,7 +324,7 @@ Profile_1 As screen:
                 Height: =34
                 PaddingLeft: =0
                 Size: =13
-                Text: ="Repeat new Password"
+                Text: ="Repeat password"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
