@@ -855,7 +855,7 @@ Create_new_event As screen:
     Button1_1 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =ColorFade(Button1_1.Color, -50%)
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayMode: =If(Form2_1.Valid && IsBlank(ErrorMessage12_1.Text) && IsBlank(ErrorMessage13_1.Text), Edit, Disabled)
         Fill: =RGBA(0, 143, 112, 1)
