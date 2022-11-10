@@ -90,7 +90,7 @@ Profile As screen:
         OnSelect: |
             =SubmitForm(Form3) && Navigate(Calendar, Fade);
             //Patch(Lietotajs,Defaults(Lietotajs),{Name:Name.Value})
-            If(SubmitForm(Form3), Notify("The record is saved!", NotificationType.Success))
+            If(SubmitForm(Form3), Notify("The user data is updated!", NotificationType.Success))
         PressedBorderColor: |
             =ColorFade(RGBA(0,143,112, 1), -30%)
         PressedColor: =RGBA(255, 255, 255, 1)
