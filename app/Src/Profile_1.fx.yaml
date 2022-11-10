@@ -8,6 +8,7 @@ Profile_1 As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =If(Form4_1.Valid && IsBlank(ErrorMessage23_1.Text) && IsBlank(ErrorMessage8.Text), Edit, Disabled)
         Fill: =RGBA(0, 143, 112, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
@@ -263,7 +264,8 @@ Profile_1 As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =13
-                Text: =Parent.Error
+                Text: |-
+                    =If(IsMatch(DataCardValue26_1.Text, "^(?=[^\d_].*?\d)\w(\w|[!@#$%]){8,20}"), "", "Password should contain special symbols and be at least 8 characters")
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
