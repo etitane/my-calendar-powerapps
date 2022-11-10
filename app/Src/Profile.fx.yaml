@@ -433,7 +433,7 @@ Profile As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =13
-                Text: =If(!(IsMatch(DataCardValue4.Text, Match.Email)), "the Email should be in the format example@example.com")
+                Text: =If(!(IsMatch(DataCardValue15.Text, Match.Email)), "the Email should be in the format example@example.com")
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =467
                 X: =393
