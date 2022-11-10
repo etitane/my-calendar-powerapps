@@ -25,6 +25,7 @@ Profile_1 As screen:
         PressedFill: =ColorFade(RGBA(0,143,112, 1), -30%)
         Size: =17
         Text: ="Save"
+        Tooltip: =If(Button6_2.DisplayMode = DisplayMode.Edit, "Save password", "Please complete all fields before save user data")
         Width: =121
         X: =632
         Y: =674
