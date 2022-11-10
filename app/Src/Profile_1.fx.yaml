@@ -102,7 +102,7 @@ Profile_1 As screen:
                 BorderColor: =If(IsBlank(Parent.Error), RGBA(0, 143, 112, 1), Color.Red)
                 BorderThickness: =4
                 Color: =RGBA(51, 51, 51, 1)
-                Default: =loggedUser.Password
+                Default: =
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -384,7 +384,7 @@ Profile_1 As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =loggedUser.Username
+                Text: =loggedUser
                 Underline: =true
                 Width: =337
                 X: =235

@@ -1,5 +1,6 @@
 Profile As screen:
     LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
+    OnVisible: =
 
     "Gallery3 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -113,6 +114,7 @@ Profile As screen:
         Height: =450
         Item: =First(Gallery3.AllItems)
         NumberOfColumns: =1
+        OnSuccess: =
         Width: =971
         X: =237
         Y: =181
@@ -122,7 +124,7 @@ Profile As screen:
             BorderColor: =RGBA(0, 143, 112, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="craad_firstname"
-            Default: =loggedUser.'First name'
+            Default: =ThisItem.'First name'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Lietotajs],DataSourceInfo.DisplayName,"craad_firstname")
             Fill: =RGBA(0, 0, 0, 0)
@@ -275,7 +277,7 @@ Profile As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =4
                 Color: =RGBA(51, 51, 51, 1)
-                Default: =loggedUser.Surname
+                Default: =ThisItem.Surname
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -390,7 +392,7 @@ Profile As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =4
                 Color: =RGBA(51, 51, 51, 1)
-                Default: =loggedUser.e_mail
+                Default: =ThisItem.e_mail
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -514,7 +516,7 @@ Profile As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =15
-                Text: =loggedUser.'Created On'
+                Text: =ThisItem.'Created On'
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey3.X + DataCardKey3.Width
                 Y: =10
