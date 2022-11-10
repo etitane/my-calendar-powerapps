@@ -729,7 +729,7 @@ Event_details As screen:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderThickness: =4
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =ColorFade(Button1_2.Color, -50%)
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayMode: =If(Form2.Valid && IsBlank(ErrorMessage12.Text) && IsBlank(ErrorMessage13.Text), Edit, Disabled)
         Fill: =RGBA(0, 143, 112, 1)
